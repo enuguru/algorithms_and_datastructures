@@ -21,7 +21,7 @@ string intToRoman(int num)
 int main()
 {
 	string newstr;
-	newstr = intToRoman(31345);
+	newstr = intToRoman(3041);
 	cout << newstr << " \n";
 	return 0;
 }
