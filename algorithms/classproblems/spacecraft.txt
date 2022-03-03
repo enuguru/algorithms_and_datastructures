@@ -1,0 +1,21 @@
+
+
+
+
+robot sent to mars
+
+you control from ground on earth
+
+
+you have square of dimenstion on mars where the robot will move
+
+
+from the ground
+
+give instructions to the robot on mars for 
+
+moving  left, right, up and down and
+
+find if the robot has hit the boundary and change direction
+
+

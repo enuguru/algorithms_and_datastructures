@@ -1,0 +1,75 @@
+
+
+Greedy Algoithms
+----------------
+
+
+Standard Greedy Algorithms :
+
+    Activity Selection Problem
+    Egyptian Fraction puzzle
+    Job Sequencing Problem
+    Huffman Coding algorithm for text compression
+    Efficient Huffman Coding for sorted input
+
+
+Greedy Algorithms in Graphs :
+
+    Kruskal’s Minimum Spanning Tree
+    Prim’s Minimum Spanning Tree
+    Boruvka’s Minimum Spanning Tree
+    Reverse delete algorithm for MST
+    Dijkastra’s Shortest Path Algorithm
+    Dial’s Algorithm
+    Dijkstra’s Algorithm for Adjacency List Representation
+    Prim’s MST for adjacency list representation
+
+Greedy Algorithms in Operating Systems :
+
+    First Fit algorithm in Memory Management
+    Best Fit algorithm in Memory Management
+    Worst Fit algorithm in Memory Management
+    Shortest Job First Scheduling
+
+Approximate Greedy Algorithms for NP Complete Problems :
+
+    Traveling Salesman Problem | Set 2 (Approximate using MST)
+    Set cover problem
+    Bin Packing Problem
+    Graph Coloring
+    K-centers problem
+    Shortest superstring problem
+
+
+Greedy Algorithms for Special Cases of DP problems:
+
+
+    Fractional Knapsack Problem
+    Minimum number of coins required
+
+
+More Greedy Problems:
+
+    Minimum time to finish all jobs with given constraints
+    Job Sequencing Problem (Using Disjoint Set)
+    Minimum sum of two numbers formed from digits of an array
+    Find Smallest number with given number of digits and digits sum
+    Connect n ropes with minimum cost
+    Minimum number of Platforms required for a railway/bus station
+    Minimum sum of absolute difference of pairs of two arrays
+    Maximize sum of consecutive differences in a circular array
+    Paper cut into minimum number of squares
+    Minimize sum of product of two arrays with permutation allowed
+    Lexicographically smallest array after at-most K consecutive swaps
+    Rearrange characters in a string such that no two adjacent are same
+    Maximum height pyramid from the given array of objects
+    Minimum cost for acquiring all coins with k extra coins allowed with every coin
+    Maximum sum possible equal to sum of three stacks
+    Maximize array sum after k-negations 
+    Rearrange a string so that all same characters become 'd'   
+     distance away
+    Minimum Cost to cut a board into squares
+    Minimize cash flow among friends
+    Minimum edges to reverse to make path from a source to a 
+     destination
+    Minimize the maximum difference between the heights of towers

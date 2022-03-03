@@ -1,0 +1,11 @@
+name: Python_Programming
+channels:
+- defaults
+dependencies:         # everything under this, installed by conda
+- numpy==1.13.3
+- scipy==1.0.0
+- scikit-learn==0.20.0
+- pandas==0.23.4
+- matplotlib==3.0.2
+- statsmodels==0.9.0
+

@@ -1,0 +1,139 @@
+
+
+segment tree
+------------
+
+Segment Tree (Sum of given range)
+
+Let us consider the following problem to understand Segment Trees.
+
+We have an array arr[0 . . . n-1]. We should be able to
+1 Find the sum of elements from index l to r where 0 <= l <= r <= n-1
+
+2 Change value of a specified element of the array to a new value x. We need to do arr[i] = x where 0 <= i <= n-1.
+Recommended: Please solve it on “PRACTICE ” first, before moving on to the solution.
+
+A simple solution is to run a loop from l to r and calculate sum of elements in given range. To update a value, simply do arr[i] = x. The first operation takes O(n) time and second operation takes O(1) time.
+
+Another solution is to create another array and store sum from start to i at the ith index in this array. Sum of a given range can now be calculated in O(1) time, but update operation takes O(n) time now. This works well if the number of query operations are large and very few updates.
+
+What if the number of query and updates are equal? Can we perform both the operations in O(log n) time once given the array? We can use a Segment Tree to do both operations in O(Logn) time.
+
+Representation of Segment trees
+1. Leaf Nodes are the elements of the input array.
+2. Each internal node represents some merging of the leaf nodes. The merging may be different for different problems. For this problem, merging is sum of leaves under a node.
+
+An array representation of tree is used to represent Segment Trees. For each node at index i, the left child is at index 2*i+1, right child at 2*i+2 and the parent is at (i-1)/2
+
+
+
+
+Segment Tree - (Range Minimum Query)
+
+We have introduced segment tree with a simple example in the previous post. In this post, Range Minimum Query problem is discussed as another example where Segment Tree can be used. Following is problem statement.
+
+We have an array arr[0 . . . n-1]. We should be able to efficiently find the minimum value from index qs (query start) to qe (query end) where 0 <= qs <= qe <= n-1.
+
+
+A simple solution is to run a loop from qs to qe and find minimum element in given range. This solution takes O(n) time in worst case.
+
+Another solution is to create a 2D array where an entry [i, j] stores the minimum value in range arr[i..j]. Minimum of a given range can now be calculated in O(1) time, but preprocessing takes O(n^2) time. Also, this approach needs O(n^2) extra space which may become huge for large input arrays.
+
+Segment tree can be used to do preprocessing and query in moderate time. With segment tree, preprocessing time is O(n) and time to for range minimum query is O(Logn). The extra space required is O(n) to store the segment tree.
+
+Representation of Segment trees
+1. Leaf Nodes are the elements of the input array.
+2. Each internal node represents minimum of all leaves under it.
+
+An array representation of tree is used to represent Segment Trees. For each node at index i, the left child is at index 2*i+1, right child at 2*i+2 and the parent is at (i-1)/2
+
+
+
+Range Minimum Query (Square Root Decomposition and Sparse Table)
+
+We have an array arr[0 . . . n-1]. We should be able to efficiently find the minimum value from index L (query start) to R (query end) where 0 <= L <= R <= n-1. Consider a situation when there are many range queries.
+
+Example:
+
+Input:  arr[]   = {7, 2, 3, 0, 5, 10, 3, 12, 18};
+        query[] = [0, 4], [4, 7], [7, 8]
+
+Output: Minimum of [0, 4] is 0
+        Minimum of [4, 7] is 3
+        Minimum of [7, 8] is 12
+
+A simple solution is to run a loop from L to R and find minimum element in given range. This solution takes O(n) time to query in worst case.
+
+Another approach is to use Segment tree. With segment tree, preprocessing time is O(n) and time to for range minimum query is O(Logn). The extra space required is O(n) to store the segment tree. Segment tree allows updates also in O(Log n) time.
+Can we do better if we know that array is static?
+
+How to optimize query time when there are no update operations and there are many range minimum queries?
+
+Below are different methods.
+
+Method 1 (Simple Solution)
+A Simple Solution is to create a 2D array lookup[][] where an entry lookup[i][j] stores the minimum value in range arr[i..j]. Minimum of a given range can now be calculated in O(1) time
+
+
+
+Range LCM Queries
+
+Given an array of integers, evaluate queries of the form LCM(l, r). There might be many queries, hence evaluate the queries efficiently.
+
+LCM (l, r) denotes the LCM of array elements
+           that lie between the index l and r
+           (inclusive of both indices) 
+
+Mathematically, 
+LCM(l, r) = LCM(arr[l],  arr[l+1] , ......... ,
+                                  arr[r-1], arr[r])
+
+Examples:
+
+Inputs : Array = {5, 7, 5, 2, 10, 12 ,11, 17, 14, 1, 44}
+         Queries: LCM(2, 5), LCM(5, 10), LCM(0, 10)
+Outputs: 60 15708 78540
+Explanation : In the first query LCM(5, 2, 10, 12) = 60, 
+              similarly in other queries.
+
+
+
+
+A naive solution would be to traverse the array for every query and calculate the answer by using,
+LCM(a, b) = (a*b) / GCD(a,b)
+
+However as the number of queries can be large, this solution would be impractical.
+
+An efficient solution would be to use segment tree. Recall that in this case, where no update is required, we can build the tree once and can use that repeatedly to answer the queries. Each node in the tree should store the LCM value for that particular segment and we can use the same formula as above to combine the segments. Hence we can answer each query efficiently!
+
+
+
+
+Min-Max Range Queries in Array
+
+Given an array arr[0 . . . n-1]. We need to efficiently find the minimum and maximum value from index qs (query start) to qe (query end) where 0 <= qs <= qe <= n-1. We are given multiple queries.
+
+Examples:
+
+Input : arr[] = {1, 8, 5, 9, 6, 14, 2, 4, 3, 7}
+        queries = 5
+        qs = 0 qe = 4
+        qs = 3 qe = 7
+        qs = 1 qe = 6
+        qs = 2 qe = 5
+        qs = 0 qe = 8
+Output: Minimum = 1 and Maximum = 9 
+        Minimum = 2 and Maximum = 14 
+        Minimum = 2 and Maximum = 14 
+        Minimum = 5 and Maximum = 14
+        Minimum = 1 and Maximum = 14
+
+
+
+
+Simple Solution : We solve this problem using Tournament Method for each query. Complexity for this approach will be O(queries * n).
+
+Efficient solution : This problem can be solved more efficiently by using Segment Tree. First read given segment tree link then start solving this problem.
+
+
+

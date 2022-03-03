@@ -1,0 +1,64 @@
+
+
+Maximum path sum in a triangle.
+
+We have given numbers in form of triangle, by starting at the top 
+of the triangle and moving to adjacent numbers on the row below, 
+find the maximum total from top to bottom.
+
+Examples:
+
+Input : 
+   3
+  7 4
+ 2 4 6
+8 5 9 3
+Output : 23
+Explanation : 3 + 7 + 4 + 9 = 23 
+
+Input :
+   8
+ -4 4
+ 2 2 6
+1 1 1 1
+
+Output : 19
+Explanation : 8 + 4 + 6 + 1 = 19 
+
+Recommended: Please try your approach on {IDE} first, before moving on to the solution.
+
+We can go through the brute force by checking every possible path but that 
+is much time taking so we should try to solve this problem with the help of 
+dynamic programming which reduces the time complexity.
+
+If we should left shift every element and put 0 at each empty position to 
+make it a regular matrix, then our problem looks like minimum cost path.
+So, after converting our input triangle elements into a regular matrix we 
+should apply the dynamic programmic concept to find the maximum path sum.
+Applying, DP in bottom-up manner we should solve our problem as:
+Example:
+
+   3
+  7 4
+ 2 4 6
+8 5 9 3
+
+Step 1 :
+3 0 0 0
+7 4 0 0
+2 4 6 0
+8 5 9 3
+
+Step 2 :
+3  0  0  0
+7  4  0  0
+10 13 15 0
+
+Step 3 :
+3  0  0  0
+20 19 0  0
+
+Step 4:
+23 0 0 0
+
+output : 2

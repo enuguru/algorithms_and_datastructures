@@ -1,0 +1,58 @@
+
+How do we convert Infix to Postfix expression ?
+
+How do we convert Infix to prefix expression ?
+
+How do we evaluate a Postfix Expression?
+
+How do we reverse a String using Stack?
+
+Can you Implement two stacks in an array?
+
+write a function to check if the given expression is paranthesis balanced
+
+Write a function to find the Next Greater Element
+
+Write a function to reverse a stack using recursion.
+
+Write a function to sort a stack using recursion
+
+How do we solve the Stock Span Problem?
+
+Design and Implement Special Stack Data Structure
+
+Can you implement a Stack using Queues?
+
+can you implement a stack using only one queue? if so how?
+
+Design a stack with operations on middle element
+
+How to efficiently implement k stacks in a single array?
+
+write a function to perform Iterative solution to the Towers of Hanoi problem
+
+Length of the longest valid substring
+
+Find maximum of minimum for every window size in a given array
+
+Check if a given array can represent Preorder Traversal of Binary Search Tree
+
+Minimum number of bracket reversals needed to make an expression balanced
+
+Iterative Depth First Traversal of Graph
+How to create mergable stack?
+Print ancestors of a given binary tree node without recursion
+Expression Evaluation
+
+write a function to find the largest Rectangular Area in a Histogram
+
+write a function to solve the celebrity Problem - 1 celebrity and n other people in a room. write a function to find the celebrity
+
+write a function to perform iterative Postorder Traversal
+
+write a function to perform iterative Postorder Traversal
+
+Design a stack that supports getMin() function in O(1) time and O(1) extra space. this means you have get the minimum value at any point in the stack, the stack should support push() and pop() operations but still this getmin() should be valid
+
+
+

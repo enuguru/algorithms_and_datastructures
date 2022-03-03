@@ -1,0 +1,32 @@
+
+it is very difficult to write this program so compactly in C. forming a list with binary tree nodes, you have to write so much
+code in C. see how beautifully it is made here using STL of c++
+
+template <typename T>
+void connect_leaves_helper(const shared_ptr<BinaryTree<T>> &n, 
+list<shared_ptr<BinaryTree<T>>> &L)
+{
+	if(n) 
+        {
+        	if(n->left && !r->right) 
+                {
+                    L.push_back(n);
+                }
+		else
+                {
+                    connect_leaves_helper(n->left, L);
+                    connect_leaves_helpter(n->right, L);
+                }
+        }
+}
+
+
+
+template<typename T>
+list<shared_ptr<BinaryTree<T>>> connect_leaves
+                          (const sharted_ptr<BinaryTree<T>> &n)
+{
+	list<shared_ptr<BinaryTree<T>>> L;
+        connect_leaves_helpter(n,L);
+        return L;
+}             

@@ -1,0 +1,15 @@
+
+/* traverse a binary search tree in a LDR (Left-Data-Right) fashion */
+void inorder ( struct btreenode *sr )
+{
+	if ( sr != NULL )
+	{
+		inorder (sr -> leftchild);
+		/* print the data of the node whose leftchild is NULL 
+                   or the path has already been traversed */
+		printf ("\t%d", sr -> data);
+		inorder (sr -> rightchild);
+	}
+	else
+		return ;
+}

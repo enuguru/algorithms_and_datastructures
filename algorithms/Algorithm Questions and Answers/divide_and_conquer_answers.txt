@@ -1,0 +1,218 @@
+
+
+divide and conquer answers
+
+
+
+Floor in a Sorted Array
+
+Given a sorted array and a value x, the floor of x is the largest element in array smaller than or equal to x. Write efficient functions to find floor of x.
+
+Examples:
+
+Input : arr[] = {1, 2, 8, 10, 10, 12, 19}, x = 5
+Output : 2
+2 is the largest element in arr[] smaller than 5.
+
+Input : arr[] = {1, 2, 8, 10, 10, 12, 19}, x = 20
+Output : 19
+19 is the largest element in arr[] smaller than 20.
+
+Input : arr[] = {1, 2, 8, 10, 10, 12, 19}, x = 0
+Output : -1
+Since floor doesn't exist, output is -1.
+
+Answer:  use binary search
+--------------------------
+
+
+Find bitonic point in given bitonic sequence
+
+You are given a bitonic sequence, the task is to find Bitonic Point in it. A Bitonic Sequence is a sequence of numbers which is first strictly increasing then after a point strictly decreasing.
+
+A Bitonic Point is a point in bitonic sequence before which elements are strictly increasing and after which elements are strictly decreasing. A Bitonic point doesn’t exist if array is only decreasing or only increasing.
+
+Examples:
+
+Input : arr[] = {6, 7, 8, 11, 9, 5, 2, 1}
+Output: 11
+All elements before 11 are smaller and all
+elements after 11 are greater.
+
+Input : arr[] = {-3, -2, 4, 6, 10, 8, 7, 1}
+Output: 10
+
+
+A simple solution for this problem is to use linear search. Element arr[i] is bitonic point if both i-1’th and i+1’th both elements are less than i’th element. Time complexity for this approach is O(n).
+
+An efficient solution for this problem is to use modified binary search.
+
+    If arr[mid-1] < arr[mid] > arr[mid+1] then we are done with bitonic point.
+    If arr[mid] < arr[mid+1] then search in right sub-array, else search in left sub-array.
+
+
+
+Find index of an extra element present in one sorted array
+
+Given two sorted arrays. There is only 1 difference between the arrays. First array has one element extra added in between. Find the index of the extra element.
+
+Examples:
+
+Input : {2, 4, 6, 8, 9, 10, 12};
+        {2, 4, 6, 8, 10, 12};
+Output : 4
+The first array has an extra element 9.
+The extra element is present at index 4.
+
+Input :  {3, 5, 7, 9, 11, 13}
+         {3, 5, 7, 11, 13}
+Output :  3
+
+
+Method 1 (Basic)
+
+The basic method is to iterate through the whole second array and check element by element if they are different
+
+
+
+K-th Element of Two Sorted Arrays
+
+Given two sorted arrays of size m and n respectively, you are tasked with finding the element that would be at the k’th position of the final sorted array.
+
+Examples:
+
+Input : Array 1 - 2 3 6 7 9
+        Array 2 - 1 4 8 10
+        k = 5
+Output : 6
+Explanation: The final sorted array would be -
+1, 2, 3, 4, 6, 7, 8, 9, 10
+The 5th element of this array is 6.
+Input : Array 1 - 100 112 256 349 770
+        Array 2 - 72 86 113 119 265 445 892
+        k = 7
+Output : 256
+Explanation: Final sorted array is -
+72, 86, 100, 112, 113, 119, 256, 265, 349, 445, 770, 892
+7th element of this array is 256.
+
+
+Basic Approach
+Since we are given two sorted arrays, we can use merging technique to get the final merged array. From this, we simply go to the k’th index
+
+
+
+
+Find a peak element in a 2D array
+
+An element is a peak element if it is greater than or equal to its four neighbors, left, right, top and bottom. For example neighbors for A[i][j] are A[i-1][j], A[i+1][j], A[i][j-1] and A[i][j+1]. For corner elements, missing neighbors are considered of negative infinite value.
+
+Examples:
+
+Input : 10 20 15
+        21 30 14
+        7  16 32 
+Output : 30
+30 is a peak element because all its 
+neighbors are smaller or equal to it. 
+32 can also be picked as a peak.
+
+Input : 10 7
+        11 17
+Output : 17
+
+
+
+Below are some facts about this problem:
+1: A Diagonal adjacent is not considered as neighbor.
+2: A peak element is not necessarily the maximal element.
+3: More than one such elements can exist.
+4: There is always a peak element. We can see this property by creating some matrices using pen and paper.
+
+Method 1: (Brute Force)
+Iterate through all the elements of Matrix and check if it is greater/equal to all its neighbors. If yes, return the element.
+
+Time Complexity: O(rows * columns)
+Auxiliary Space: O(1)
+
+Method 2 : (Efficient)
+This problem is mainly an extension of Find a peak element in 1D array. We apply similar Binary Search based solution here.
+
+    Consider mid column and find maximum element in it.
+    Let index of mid column be ‘mid’, value of maximum element in mid column be ‘max’ and maximum element be at 
+    ‘mat[max_index][mid]’
+    If max >= A[index][mid-1] & max >= A[index][pick+1], max is a peak, return max.
+    If max < mat[max_index][mid-1], recur for left half of matrix.
+    If max < mat[max_index][mid+1], recur for right half of matrix
+
+
+
+
+Search element in a sorted matrix
+
+Given a sorted matrix mat[n][m] and an element ‘x’. Find position of x in the matrix if it is present, else print -1. Matrix is sorted in a way such that all elements in a row are sorted in increasing order and for row ‘i’, where 1 <= i <= n-1, first element of row 'i' is greater than or equal to the last element of row 'i-1'. The approach should have O(log n + log m) time complexity.
+
+Examples:
+
+Input : mat[][] = { {1, 5, 9},
+                    {14, 20, 21},
+                    {30, 34, 43} }
+        x = 14
+Output : Found at (1, 0)
+
+Input : mat[][] = { {1, 5, 9, 11},
+                    {14, 20, 21, 26},
+                    {30, 34, 43, 50} }
+        x = 42
+Output : -1
+
+
+
+Please note that this problem is different from Search in a row wise and column wise sorted matrix. Here matrix is more strictly sorted as first element of a row is greater than last element of previous row.
+
+A Simple Solution is to one by one compare x with every element of matrix. If matches, then return position. If we reach end, return -1. Time complexity of this solution is O(n x m).
+
+An efficient solution is to typecast given 2D array to 1D array, then apply binary search on the typecasted array.
+
+Another efficient approach that doesn’t require typecasting is explained below.
+
+1) Perform binary search on the middle column 
+   till only two elements are left or till the
+   middle element of some row in the search is
+   the required element 'x'. This search is done
+   to skip the rows that are not required
+2) The two left elements must be adjacent. Consider
+   the rows of two elements and do following
+   a) check whether the element 'x' equals to the 
+      middle element of any one of the 2 rows
+   b) otherwise according to the value of the 
+      element 'x' check whether it is present in 
+      the 1st half of 1st row, 2nd half of 1st row, 
+      1st half of 2nd row or 2nd half of 2nd row. 
+
+Note: This approach works for the matrix n x m 
+      where 2 <= n. The algorithm can be modified
+      for matrix 1 x m, we just need to check whether
+      2nd row exists or not      
+
+Example:
+
+Consider:    | 1  2  3  4| 
+x = 3, mat = | 5  6  7  8|   Middle column:
+             | 9 10 11 12|    = {2, 6, 10, 14}
+             |13 14 15 16|   perform binary search on them
+                             since, x < 6, discard the 
+                             last 2 rows as 'a' will 
+                             not lie in them(sorted matrix)
+Now, only two rows are left
+             | 1  2  3  4| 
+x = 3, mat = | 5  6  7  8|   Check whether element is present
+                             on the middle elements of these
+                             rows = {2, 6}
+                             x != 2 or 6
+If not, consider the four sub-parts
+1st half of 1st row = {1}, 2nd half of 1st row = {3, 4}
+1st half of 2nd row = {5}, 2nd half of 2nd row = {7, 8}
+
+According the value of 'x' it will be searched in the
+2nd half of 1st row = {3, 4} and found at (i, j): (0, 2)                              

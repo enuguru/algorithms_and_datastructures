@@ -1,0 +1,21 @@
+
+
+int FindMinInBT(struct BinaryTreeNode *root)
+{
+	int temp, left, right, min = INT_MAX;
+	if(root !=NULL)
+	{
+		temp = root->data;
+		left = FindMinInBT(root->left);
+		right = FindMinInBT(root->right);
+		if(left<right)
+			min = left;
+		else
+			min = right;
+		if((root->data) < min)
+			min = root->data;
+	}
+	return min;
+}
+
+

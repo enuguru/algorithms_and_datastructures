@@ -1,0 +1,20 @@
+
+
+
+
+Dijsktra's algorithm finds the minimum distance from node i to all nodes (you specify i). So in return you get the minimum distance tree from node i.
+
+Prims algorithm gets you the minimum spaning tree for a given graph. A tree that connects all nodes while the sum of all costs is the minimum possible.
+
+So with Dijkstra you can go from the selected node to any other with the minimum cost, you don't get this with Prim's
+
+
+
+The only difference I see is that Prim's algorithm stores a minimum cost edge whereas Dijkstra's algorithm stores the total cost from a source vertex to the current vertex.
+
+Dijkstra gives you a way from the source node to the destination node such that the cost is minimum. However Prim's algorithm gives you a minimum spanning tree such that all nodes are connected and the total cost is minimum.
+
+In simple words:
+
+So, if you want to deploy a train to connecte several cities, you would use Prim's algo. But if you want to go from one city to other saving as much time as possible, you'd use Dijkstra's algo.
+

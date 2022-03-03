@@ -1,0 +1,25 @@
+
+
+Can you implement a stack with two queues?
+
+can you implement a stack with one queue?
+
+implement queue using an array
+
+implement queue using a linked list
+
+can you implement 2 queues in a single array
+
+can you implement 2 queues using a single linked list?
+
+find the rotten oranges in the given matrix
+
+Find the first circular tour that visits all petrol pumps
+
+Iterative Method to find Height of Binary Tree
+
+Construct Complete Binary Tree from its Linked List Representation
+
+Implement LRU Cache
+
+Breadth First Traversal for a Graph

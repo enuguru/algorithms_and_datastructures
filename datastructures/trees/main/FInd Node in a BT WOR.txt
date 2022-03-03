@@ -1,0 +1,24 @@
+
+int FindDataInBTWORwithLOT(struct BinaryTreeNode *root, int data)
+{
+	struct node BinaryTreeNode *temp;
+	struct Queue *Q = CreateQueue();
+	if(! root)
+		return -1;
+	Enqueue(Q,root);
+	while(!IsEmptyQueue(Q))
+	{
+		temp = Dequeue(Q);
+		if(data == (temp->data))
+			return true;
+		if(temp->left)
+			Enqueue(Q,temp->left);
+		if(temp->right)
+			Enqueue(Q,temp->right);
+	}
+	DeleteQueue(Q);
+	return 0;
+	}
+}
+
+

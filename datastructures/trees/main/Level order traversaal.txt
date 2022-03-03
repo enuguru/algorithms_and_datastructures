@@ -1,0 +1,24 @@
+
+// algorithm for doing level order traversal of a binary tree
+
+void Levelordertraversal(struct BinaryTreeNode *root)
+{
+	struct BinaryTreeNode *temp;
+	struct Queue *Q = create_queue();
+	if(root == NULL)
+		return;
+	EnQueue(Q,root);
+	while(IsEmptyQueue(Q))
+	{
+		temp = DeQueue(Q);
+		// process current node
+		printf("%d\n",temp->data);
+		if(temp->left)
+			EnQueue(Q,temp->left);
+		if(temp->right)
+			EnQueue(Q,temp->right);
+	}
+	DeleteQueue(Q);
+}
+		
+}

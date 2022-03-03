@@ -1,0 +1,14 @@
+
+/* traverse a binary search tree in LRD (Left-Right-Data) fashion */
+
+void postorder ( struct btreenode *sr )
+{
+	if ( sr != NULL )
+	{
+		postorder ( sr -> leftchild ) ;
+		postorder ( sr -> rightchild ) ;
+		printf ( "\t%d", sr -> data ) ;
+	}
+	else
+		return ;
+}

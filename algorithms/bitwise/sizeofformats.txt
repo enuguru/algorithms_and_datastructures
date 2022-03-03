@@ -1,0 +1,6 @@
+
+the sizeofformats program shows the size of each variable type.
+
+this is printed for both C and C++
+
+we find the size of the formats remain the same for both the formats

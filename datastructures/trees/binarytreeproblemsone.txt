@@ -1,0 +1,127 @@
+
+
+write a function that takes as input the root of a binary tree whose nodes have a key field and returns TRUE iff the tree satisfies the BST property
+
+given a node x, find the successor of x in a BST. Assume that nodes have parent fields and the parent field of root points to NULL
+
+design efficient functions for inserting and removing keys in a BST. Assume that all elements in the BST are unique and that your insertion method must preserve this property. you cannot change the contents of any node. what are the time complexities of your functions?
+
+Given a BST T, write programs recursive and iterative versions of a function that takes a BST T, a  key k, and returns the node containing k that would appear first in an inorder walk. If k is absent return NULL
+
+
+write a function that takes a BST T and a key k, and returns the first entry larger than k that would appear in an inorder walk. if k is absent or no key larger than k is present return NULL. for example, when applied to the BST in the diagram given below you should return 29 if k =23, if k = 32 you should return NULL
+
+
+write a function that takes a min-first BST T, a key k, and returns TRUE iff T contains k
+
+
+A max first BST is defined analogously to the min-first BST, the difference being that the largest key is stored at the root. Design an algorithm that takes an n node min-BST and converts it to a max-BST in O(n) time. Use as little additional space as possible
+
+
+Implement insert and delete functions for a min-first BST
+
+How would you build a BST of minimum possible height from a sorted array A?
+
+Let L be a singly linked list of numbers, sorted in ascending order. Design an efficient algorithm that takes as input L, and builds a height-balanced BST on the entries in L. The algorithm should run in O(n) time, where n is the number of nodes in L. You cannot use dynamic memory allocation - reuse the nodes of L for the BST. You can update pointer fields but cannot change node contents
+
+Design an algorithm that takes a input a BST B and returns a sorted doubly linked list on the same elements. The algorithm should not allocate any new nodes. The original BST does not have to be preserved. Use its nodes as the nodes of the resulting list, as shown in the diagram below.
+
+Let A and B be BSTs. Design an algorithm that merges them in O(n) time. Dynamic memory allocation is not allowed. You do not need to preserve the original trees. YOu can update the pointer fields, but cannot change the key stored in the node
+
+given the root of a BST and an integer K, design a function that finds the k largest elements in this BST. for example, if the input to your function is the BST given below, with K = 3, your function should return 53,47,43
+
+suppose each node in a BST has a size field, which denotes the number of nodes at the subtree rooted at that node, inclusive of the node. How would you efficiently compute the number of nodes that lie in a given range? can the size field be updated efficiently on insert and on delete?
+
+design a data structure that stores closed intervals and can efficiently return the complete set of intervals that intersect a specified range [L,U]. Your data structure must also support efficient insertions and deletions
+
+which traversal orders - inorder, preorder, and postorder - of a BST can be used to reconstruct the BST uniquely? write a program that takes as input a sequence of node keys and computes the corresponding BST. Assume that all keys are unique
+
+design an algorithm that takes a BST T of size n and height h, nodes s and b, and returns the LCA of s and b. 
+Assume s.key < b.key. for example, in the diagram given below, if s is node C and b is node G, your algorithm should return node B. Your algorithm should run in O(h) time and O(1) space. Nodes do not have pointers to their parents.
+
+Let r,s and m be distinct nodes in a BST. In this BST, nodes do not have pointers to their parents and all keys are unique. Write a function that returns TRUE if m has both an ancestor and a descendant in the set [r,s]. for example in the diagram given below, if m is node J, your function should return TRUE if the given set is [A,K] and return FALSE if the given set is [I,P]
+
+solve the same problem without modifying the tree
+
+write a function to find if two given trees are symmetric
+
+write a function to find if two given trees are identical
+
+write a function to find if the two given trees are isomorphic
+
+write a program to do level order traversal of a binary tree
+
+write a program to do level order traversal of a binary tree in spiral form
+
+Given a binary tree, write a function that returns true if the tree satisfies the Children sum property.
+For every node, data value must be equal to sum of data values in left and right children. Consider data value as 0 for NULL children. Below tree is an example
+
+Convert an arbitrary Binary Tree to a tree that holds Children Sum Property
+
+write a function to find the diameter of a Binary Tree
+The diameter of a tree (sometimes called the width) is the number of nodes on the longest path between two leaves in the tree.
+
+write a function to determine if a binary tree is height-balanced
+A non-empty binary tree T is balanced if:
+1) Left subtree of T is balanced
+2) Right subtree of T is balanced
+3) The difference between heights of left subtree 
+   and right subtree is not more than 1
+
+perform preorder, inorder and postorder traversals of a binary tree with iteration (without recursion)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

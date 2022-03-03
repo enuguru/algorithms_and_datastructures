@@ -1,0 +1,25 @@
+
+find the successor of the given node in the BST
+
+template <typename T>
+shared_ptr<BinarySearchTree<T>> find_successor_BST(
+               shared_ptr<BinarySearchTree<T>> n
+{
+     if(n->right)
+     {
+         // find the smallest element in n's right subtree
+         n = n -> right;
+         while(n->left)
+         {
+             n->left;
+         }
+         return n;
+      }
+
+      while(n->parent && n->parent-right == n)
+      {
+          n = n->parent;
+      }
+      
+      // return nullptr means n is the largest in this BST
+}

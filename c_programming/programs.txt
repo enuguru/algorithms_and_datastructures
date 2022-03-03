@@ -1,0 +1,136 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() 
+{
+    char ch;
+    char s[50];
+    char sen[100];
+    scanf("%c",&ch);
+    scanf("%s",s);    
+    scanf("\n");
+    scanf("%[^\n]%*c", sen);
+    printf("%c\n%s\n%s",ch,s,sen);    
+    return 0;
+}
+
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main()
+{
+	
+    int a;
+    int b;
+    float c;
+    float d;
+    scanf("%d",&a);
+    scanf("%d",&b);    
+    scanf("\n");
+    scanf("%f",&c);
+    scanf("%f",&d); 
+    printf("%d %d \n",(a+b),(a-b));
+    printf("%.1f %.1f \n",(c+d),(c-d));
+    return 0;
+}
+
+Task
+
+Your task is to take two numbers of int data type, two numbers of float data type as input and output their sum:
+
+Declare  variables: two of type int and two of type float.
+Read  lines of input from stdin (according to the sequence given in the 'Input Format' section below) and initialize your  variables.
+Use the  and  operator to perform the following operations:
+Print the sum and difference of two int variable on a new line.
+Print the sum and difference of two float variable rounded to one decimal place on a new line
+
+
+Sample Input
+
+10 4
+4.0 2.0
+
+
+Sample Output
+
+14 6
+6.0 2.0
+Explanation
+
+When we sum the integers  and , we get the integer . When we subtract the second number  from the first number , we get  as their difference.
+When we sum the floating-point numbers  and , we get . When we subtract the second number  from the first number , we get  as their difference.
+
+
+
+newlist = [3, 5, 7, 9, 11, 23, 25, 31, 35]
+for val in range(1,len(newlist)):
+	if newlist[val] - newlist[val-1] != 2:
+		count = count + 1
+print(count)
+
+remove the duplicates in the list [34,45,67,34,56,32,45,67]
+
+
+#include <iostream>
+#include <cstdio>
+using namespace std;
+
+/*
+Add `int max_of_four(int a, int b, int c, int d)` here.
+*/
+
+int max_of_four(int a, int b, int c, int d) {
+    int m = a;
+    if (b > m) m = b;
+    if (c > m) m = c;
+    if (d > m) m = d;
+    return m;
+}
+
+int main() {
+    int a, b, c, d;
+    scanf("%d %d %d %d", &a, &b, &c, &d);
+    int ans = max_of_four(a, b, c, d);
+    printf("%d", ans);
+    
+    return 0;
+}
+
+
+
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    int numElements;
+    cin >> numElements;
+    int arr[numElements];
+    for (int i = 0; i < numElements; i++)
+        cin >> arr[i];
+    for (int i = numElements - 1; i >= 0; i--)
+        cout << arr[i] << " ";
+    return 0;
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+

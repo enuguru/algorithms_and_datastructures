@@ -1,0 +1,44 @@
+
+write a program to find if the given binary tree is balanced or unbalanced, if you are given the root of the binary tree
+
+write a program to find if the given binary tree is a complete binary tree, if you are given the root of the binary tree
+
+write a program to find if the given binary tree is full or a complete binary tree, if you are given the root of the binary tree
+
+write a program to find if the given binary tree is a perfect binary tree, if you are provided the root of the binary tree
+
+write a function that returns the size of the largest subtree that is complete
+ 
+write a function that takes as i
+nput the root of a binary tree and returns TRUE or FALSE depending on whether the tree is symmetric
+
+design an algorithm that takes as input a binary tree and positive integer k, and returns a node u in the binary tree such that u is not k-balanced, but all of u's descendents are k-balanced. if no such node exists, return NULL
+
+design an efficient algorithm for computing the LCA of nodes a and b in a binary tree in which nodes do not have a parent pointer
+
+design an efficient algorithm for computing the LCA of nodes a and b in a binary tree in which nodes have a parent pointer. the tree has n nodes and height h. your algorithm should run in O(1) space and O(h) time
+
+design a algorithm for computing the LCA of a and b that has time complexity O(max(da-dl,db-dl)). what is the worst-case time complexity and space complexity of your algorithm?
+
+for a certain application processes need to lock nodes in a binary tree. Implement a library for locking nodes in a binary tree, subject to the constraint that a node cannot be locked if any of its descendants or ancestors are locked. specifically, write functions isLock(), lock(), unLock(), with time complexities O(1), 
+O(h) and O(h). Here h is the height of the binary tree. Assume that each node has a parent field
+
+Let T be the root of a binary tree in which nodes have an explicit parent field. Design an iterative algorithm that enumerates the nodes inorder and uses O(1) additional space. Your algorithm cannot modify the tree.
+
+how would you perform preorder and postorder walks iteratively using O(1) additional space? your algorihm cannot modify the tree. Nodes have an explicit parent 
+
+design a function that efficiently computes the k-th node appearing in an inorder traversal. specifically, your function should take as input a binary tree T and an integer K. Each node has a size field, which is the number of nodes in the subtree rooted at that node. what is the time complexity of your function?
+
+given an inorder traversal and one of preorder or postorder traversal of a binary tree, write a function to reconstruct the tree
+
+Let A be an an A[0rray of n distinct integers. Let the index of the maximum element of A be m. Define the max-tree on A to be the binary tree on the entries of A in which the root contains thn(e maximum element of A, the left child is the max-tree on A[0:m-1] and the right child is the max-tree on A[m+1:m-1]. Design an O(n) algorithm for building the max-tree of A
+
+design an O(n) time  for reconstructing a binary tree from a preorder visit sequence that uses NULL to mark empty children. How would you modify your reconstruction algorithm if the sequence corresponded to a postorder or inorder walk?
+
+given a binary tree, write a function which forms a linked list from the leaves of the binary tree. the leaves should appear in the left-to-right order
+
+write a function that prints the nodes on the exterior of a binary tree in anti-clockwise order, i.e., print the nodes on the path from the root to the leftmost leaf in that order, then the leaves from left-to-right, then the noces from the rightmost leaf up to the root. (by leftmost leaf it is meant the leaf that appears first (last) in an inorder walk)
+ 
+given a string S and a set of strings D, find the shortest prefix of s which is not a  prefix of any string in ?
+
+how would you find the shortest string that is not a prefix of any string in D?

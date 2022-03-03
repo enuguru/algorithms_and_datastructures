@@ -1,0 +1,9 @@
+
+
+       maximum sum subarray by dynamic programming
+
+        maxsum[i] =  {  max(a[i], maxsum[i-1]+a[i])  }
+
+        maxsum(arr) =  { max( i = 1 to n  arr[i])   }
+
+

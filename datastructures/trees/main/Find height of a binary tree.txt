@@ -1,0 +1,22 @@
+
+
+int findHeight(TreeNode<T> aNode)
+{
+    if(aNode == 0)
+        return -1;
+
+    int lefth = findHeight(aNode.left);
+    int righth = findHeight(aNode.right);
+
+    if(lefth > righth)
+        return lefth + 1;
+    else
+        return righth +1;
+}
+
+
+If there is no root node then the tree height is -1.
+This is very important. This is where you got struck 
+with Karumanchi book.
+If there is only one node which is the root then you have to 
+return height as 0.

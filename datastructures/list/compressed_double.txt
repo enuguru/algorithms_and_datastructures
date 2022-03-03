@@ -1,0 +1,55 @@
+
+
+ XOR Linked lists: Compressed Doubly Linked Lists
+I just tumbled on to an interesting concept to compress doubly linked lists. Normally double linked lists store two pointers: next and previous. This can be compressed into just one field.
+
+Consider the linked list:
+
+A --- B --- C --- D --- E
+ 
+A, B, ..., E are the addresses of the nodes of the linked lists.
+Now, for each node, (except the first and the last) we store the following:
+ 
+ptr = previous_addr EXOR next_addr
+
+So now, addresses stored in our example linked list are:
+
+B.ptr = A XOR C
+C.ptr = B XOR D
+D.ptr = C XOR E
+ 
+For the first element, we store
+
+A.ptr = 1 XOR B
+
+as we do not have any element before A.
+
+To get the address of an element we calculate the expression:
+ 
+PreviousElementAddr XOR CurrentElement.ptr
+
+This expression gives us the address of the next element.
+For Example, if we are at B and want to find the address of the next element, we calculate:
+
+A XOR B.ptr = A XOR (A XOR C) = C
+
+Similarly for finding address of D, we calculate:
+
+B XOR C.ptr = B XOR (B XOR D) = D
+
+To traverse the linked list, we already know the address of A from the head pointer.
+As a special case, to find the address of B, we calculate:
+
+1 XOR A.ptr = 1 XOR (1 XOR B) = B
+
+Similarly in the last element, we store:
+
+LastElement.ptr = SecondLastElementAddr XOR 1
+
+And then while traversing, to find the address of the second last element, we calculate:
+
+1 XOR LastElement.ptr = 1 XOR (SecondLastElementAddr XOR 1) = SecondlastElementAddr
+
+Traversing a list had a little execution overhead in that it requires 2 reads and an XOR operation and a fetch, as against just a read and a fetch in doubly linked list. This is a trade off for space savings of the order of O(n).
+
+

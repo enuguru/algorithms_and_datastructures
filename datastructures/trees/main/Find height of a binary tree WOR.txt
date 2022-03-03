@@ -1,0 +1,34 @@
+
+int findHeightWOR(TreeNode<T> aNode)
+{
+	int level =0;
+    	if(! root)
+	      return 0;
+	struct Queue *Q = CreateQueue();
+                 Enqueue(Q,root);
+	Enqueue(Q,NULL);
+	while(! IsEmptyQueue(Q))
+	{
+		root = DeQueue(Q);
+		if(root == NULL)
+		{
+			if(! IsEmptyQueue(Q))
+				Enqueue(Q,NULL);
+			level++;
+		}
+		else
+		{
+			if(root->left)
+				Enqueue(Q,root->left);
+			if(root->right)
+				Enqueue(Q,root->right);
+		}
+	}
+	return level;
+}
+
+If there is no root node then the tree height is -1.
+This is very important. This is where you got struck 
+with Karumanchi book.
+If there is only one node which is the root then you have to 
+return height as 0.

@@ -1,0 +1,10 @@
+
+
+int SizeofBinaryTree(TreeNode<T> aNode)
+{	
+    if(root == NULL)
+        return 0;
+    return ((SizeofBinaryTree(root->left) + 1 + (SizeofBinaryTree(root->right)));
+	
+}
+

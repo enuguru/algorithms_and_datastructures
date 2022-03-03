@@ -1,0 +1,20 @@
+
+
+Minimum sum of two numbers formed from digits of an array
+Given an array of digits (values are from 0 to 9), find the minimum possible sum of two numbers formed from digits of the array. All digits of given array must be used to form the two numbers.
+
+Examples:
+
+Input: [6, 8, 4, 5, 2, 3]
+Output: 604
+The minimum sum is formed by numbers 
+358 and 246
+
+Input: [5, 3, 0, 7, 4]
+Output: 82
+The minimum sum is formed by numbers 
+35 and 047 
+Recommended: Please solve it on “PRACTICE” first, before moving on to the solution.
+
+Since we want to minimize the sum of two numbers to be formed, we must divide all digits in two halves and assign half-half digits to them. We also need to make sure that the leading digits are smaller.
+We build a Min Heap with the elements of the given array, which takes O(n) worst time. Now we retrieve min values (2 at a time) of array, by polling from the Priority Queue and append these two min values to our numbers, till the heap becomes empty, i.e., all the elements of array get exhausted. We return the sum of two formed numbers, which is our required answer.

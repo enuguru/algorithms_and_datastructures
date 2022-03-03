@@ -1,0 +1,14 @@
+
+algorithm for deleting a binary tree completely (that is each node
+has to be deleted)
+
+void DeleteBinaryTree(struct BinaryTreeNode *root)
+{
+	if(root == NULL)
+		return;
+	/* first delete both the sub trees */
+	DeleteBinaryTree(root->left);
+	DeleteBinaryTree(root->right);
+	/* deleting the current node only after deleting the sub trees */
+	free(root);
+}

@@ -1,0 +1,23 @@
+
+int FindMinInBTWORwithLOT(struct BinaryTreeNode *root)
+{
+	struct node BinaryTreeNode *temp;
+	int min = INT_MAX;
+	struct Queue *Q = CreateQueue();
+	Enqueue(Q,root);
+	while(!IsEmptyQueue(Q))
+	{
+		temp = Dequeue(Q);
+		if(min > (temp->data))
+			min = temp->data;
+		if(temp->left)
+			Enqueue(Q,temp->left);
+		if(temp->right)
+			Enqueue(Q,temp->right);
+	}
+	DeleteQueue(Q);
+	return min;
+	}
+}
+
+

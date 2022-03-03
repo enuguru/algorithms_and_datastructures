@@ -1,0 +1,26 @@
+
+design a sorting algorithm for sorting the elements in nlogn time using a heap
+
+print the k-largest elements in an array of size n
+
+design an algorithm that takes a set of files containing stock trade information in sorted order and writes a single file containing the lines appearing in the individual files sorted in sorted order. The algorithm should use very little RAM ideally of the order of a few kilo bytes
+
+design an efficient algorithm for soring k-increasing-decreasing array. you are given another array of the same size that the result should be written to, and you can use O(k) additional storage
+
+how would you implement a stack API using a heap and a queue API using a heap
+
+Implement a text compression algorithm (huffman's coding)
+
+how would you compute the k-stars which are closest to the earth? you only have a few mega bytes of RAM
+
+design an O(nlogk) time algorithm that reads a sequence of n elements and for each element starting from the k-th element, prints the k-th largest element read up to that point. the length of the sequence is not known in advance. your algorithm cannot use more than O(k) additional storage
+
+the input consists of a very long sequence of numbers. each number is atmost k positions away from its correctly sorted position. design an algorithm that outputs the numbers in the correct order and uses O(k) storage, independent of the number elements processed
+
+design an O(n) time algorithm to computer the k elements closes to the median of an array A
+
+design an algorithm for computing the running median of a sequence. the time complexity should be O(logn) per element read in, where n is the number of values read in up to that element
+
+design an algorithm for efficiently computing the k smallest real numbers of the form a + b * sqroot(2) for non-negative integers a and b
+
+design an O(k) time algorithm for determining whether the k-th largest element in a max-heap is smaller than, equal to, or larger than a given x. The max-heap is represented using an array. Your algorithm's time complexity should be independent of the number of elements in the max-heap and may use O(k) additional storage. It cannot make any changes to the max-heap, and should handle the possibility of duplicate entries

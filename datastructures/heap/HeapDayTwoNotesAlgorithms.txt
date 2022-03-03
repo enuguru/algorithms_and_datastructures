@@ -1,0 +1,57 @@
+
+34, 5, 67, 12, 23, 11, 9, 7, 40
+
+k = 3
+
+k smallest elements
+
+how to do this in quick time?
+
+1. sort the elements in ascending by any sorting method, and get the first k elements
+
+O(nlogn + k)  ~  O(nlogn)
+
+build a min-heap and then delete min k times. then you get the 
+k-smallest elements of the array
+
+
+name of company   price
+name  price
+
+
+chennai   -  file 1
+
+TVS          89.00
+mahindra     91.00
+
+
+mumbai   -  file2
+
+TVS    -   90.00
+mahindra - 95.00
+
+there are 10 files  each file contains stock trade information
+in sorted order of price
+
+can you make one single file of all the stocks in 10 files merged in to one file but it has to be sorted
+
+brute force method
+you can take one file and take another file and merge
+
+
+the first line contains the smallest price stock in all the files
+why cant we compare all the first lines in all the files?
+do a merge sort of all the first lines in all the files
+then  do a merge of all the second lines in all the files
+this is a merge sort
+
+there are totally k files
+there are totally n elements in each file
+
+the best way of doing this is
+build one heap for all the files
+in that one heap which is a min heap, take all the k files present and 
+put all the k stock prices in one stretch in that heap
+klogk n elements are there in the heap
+
+do this for all the n elemnts in the heap n(klogk)

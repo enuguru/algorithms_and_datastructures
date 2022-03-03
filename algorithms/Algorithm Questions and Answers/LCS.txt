@@ -1,0 +1,94 @@
+
+
+
+The longest common suffix has following optimal substructure property
+
+   LCSubStr(X, Y, m, n) = LCSubStr(X, Y, m-1, n-1) + 1 if X[m] = Y[n]
+                        0  Otherwise (if X[m] != Y[n])
+
+The maximum length Longest Common Suffix is the longest common sub string.
+   LCSubStr(X, Y, m, n)  = Max(LCSubStr(X, Y, i, j)) where 1 <= i <= m
+                                                     and 1 <= j <= n
+
+
+
+huffman's coding
+
+character   Frequency
+    a	        5
+    b           9
+    c           12
+    d           13
+    e           16
+    f           45
+
+
+ character           Frequency
+       c               12
+       d               13
+ Internal Node         14
+       e               16
+       f               45
+
+
+
+character           Frequency
+Internal Node          14
+       e               16
+Internal Node          25
+       f               45
+
+
+character          Frequency
+Internal Node         25
+Internal Node         30
+      f               45 
+
+
+
+character     Frequency
+       f         45
+Internal Node    55
+
+
+character      Frequency
+Internal Node    100
+
+
+
+Steps to print codes from Huffman Tree:
+Traverse the tree formed starting from the root. Maintain an auxiliary array. While moving to the left child, write 0 to the array. While moving to the right child, write 1 to the array. Print the array when a leaf node is encountered.
+
+
+The codes are as follows:
+
+character   code-word
+    f          0
+    c          100
+    d          101
+    a          1100
+    b          1101
+    e          111
+
+
+KMP algorithm
+
+Examples:
+For the pattern “AABAACAABAA”, lps[] is [0, 1, 0, 1, 2, 0, 1, 2, 3, 4, 5]
+For the pattern “ABCDE”, lps[] is [0, 0, 0, 0, 0]
+For the pattern “AAAAA”, lps[] is [0, 1, 2, 3, 4]
+For the pattern “AAABAAA”, lps[] is [0, 1, 2, 0, 1, 2, 3]
+For the pattern “AAACAAAAAC”, lps[] is [0, 1, 2, 0, 1, 2, 3, 3, 3, 4]
+
+Example:  For pattern p = ababaa the widths of the borders in array b have the following values. For instance we have b[5] = 3, since the prefix ababa of length 5 has a border of width 3.
+
+j:	0	1	2	3	4	5	6
+p[j]:	a	b	a	b	a	a	
+b[j]:	-1	0	0	1	2	3	1
+
+
+
+
+
+
+

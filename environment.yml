@@ -1,0 +1,10 @@
+name: Algorithms_and_Data_Structures
+channels:
+- defaults
+dependencies:         # everything under this, installed by conda
+- gcc
+
+
+other
+- xcode-select --install
+

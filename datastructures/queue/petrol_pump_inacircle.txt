@@ -1,0 +1,28 @@
+
+circular tour of the highway
+
+circular tour of the petrol pumps
+
+1         2        3         4
+
+{4, 6}, {6, 5}, {7, 3} and {4, 5}
+
+
+{6,7},  {8,7}, {10,5}
+
+queue
+
+int where = 2;
+(6,5) (7,3), (4,5), (4,6)
+
+
+
+
+petrol pumps 
+
+1st column number of litres in the petrol pump
+
+2nd column indicates the distance from that petrol pump 
+to the next
+
+one litre can take you unit distance - one litre - one km

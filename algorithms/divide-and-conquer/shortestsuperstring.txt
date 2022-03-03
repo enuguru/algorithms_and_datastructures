@@ -1,0 +1,60 @@
+
+
+Shortest Superstring Problem
+
+Given a set of n strings arr[], find the smallest string that contains each string in the given 
+set as substring. We may assume that no string in arr[] is substring of another string.
+
+Examples:
+
+Input:  arr[] = {"geeks", "quiz", "for"}
+Output: geeksquizfor
+
+Input:  arr[] = {"catg", "ctaagt", "gcta", "ttca", "atgcatc"}
+Output: gctaagttcatgcatc
+
+Shortest Superstring Greedy Approximate Algorithm
+Shortest Superstring Problem is a NP Hard problem. A solution that always finds shortest 
+superstring takes exponential time. Below is an Approximate Greedy algorithm.
+
+Let arr[] be given set of strings.
+
+1) Create an auxiliary array of strings, temp[].  Copy contents
+   of arr[] to temp[]
+
+2) While temp[] contains more than one strings
+     a) Find the most overlapping string pair in temp[]. Let this
+        pair be 'a' and 'b'. 
+     b) Replace 'a' and 'b' with the string obtained after combining
+        them.
+
+3) The only string left in temp[] is the result, return it.
+
+Two strings are overlapping if prefix of one string is same suffix of other string or 
+vice verse. The maximum overlap mean length of the matching prefix and suffix is maximum.
+
+Working of above Algorithm:
+
+arr[] = {"catgc", "ctaagt", "gcta", "ttca", "atgcatc"}
+Initialize:
+temp[] = {"catgc", "ctaagt", "gcta", "ttca", "atgcatc"}
+
+The most overlapping strings are "catgc" and "atgcatc"
+(Suffix of length 4 of "catgc" is same as prefix of "atgcatc")
+Replace two strings with "catgcatc", we get
+temp[] = {"catgcatc", "ctaagt", "gcta", "ttca"}
+
+The most overlapping strings are "ctaagt" and "gcta"
+(Prefix of length 3 of "ctaagt" is same as suffix of "gcta")
+Replace two strings with "gctaagt", we get
+temp[] = {"catgcatc", "gctaagt", "ttca"}
+
+The most overlapping strings are "catgcatc" and "ttca"
+(Prefix of length 2 of "catgcatc" as suffix of "ttca")
+Replace two strings with "ttcatgcatc", we get
+temp[] = {"ttcatgcatc", "gctaagt"}
+
+Now there are only two strings in temp[], after combing
+the two in optimal way, we get tem[] = {"gctaagttcatgcatc"}
+
+Since temp[] has only one string now, return it.

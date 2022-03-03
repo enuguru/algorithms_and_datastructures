@@ -1,0 +1,17 @@
+
+
+/* traverse a binary search tree in a DLR (Data-Left-right) fashion */
+void preorder ( struct btreenode *sr )
+{
+	if ( sr != NULL )
+	{
+		/* print the data of a node */
+		printf ( "\t%d", sr -> data ) ;
+		/* traverse till leftchild is not NULL */
+		preorder ( sr -> leftchild ) ;
+		/* traverse till rightchild is not NULL */
+		preorder ( sr -> rightchild ) ;
+	}
+	else
+		return ;
+}

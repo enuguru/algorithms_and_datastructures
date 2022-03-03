@@ -1,0 +1,18 @@
+
+int FindMaxInBT(struct BinaryTreeNode *root)
+{
+	int temp, left, right, max = INT_MIN;
+	if(root !=NULL)
+	{
+		temp = root->data;
+		left = FindMaxInBT(root->left);
+		right = FindMaxInBT(root->right);
+		if(left>right)
+			max = left;
+		else
+			max = right;
+		if((root->data) > max)
+			max = root->data;
+	}
+	return max;
+}

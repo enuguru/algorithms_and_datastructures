@@ -1,0 +1,26 @@
+
+int SizeofBinaryTreeWORwithLOT(struct BinaryTreeNode *root)
+{
+	struct node BinaryTreeNode *temp;
+	int count =0;
+	if(root == NULL)
+		return 0;
+	struct Queue *Q = CreateQueue();
+	Enqueue(Q,root);
+	while(!IsEmptyQueue(Q))
+	{
+		temp = Dequeue(Q);
+  		count = count+1;
+		if(max < (temp->data))
+			max = temp->data;
+		if(temp->left)
+			Enqueue(Q,temp->left);
+		if(temp->right)
+			Enqueue(Q,temp->right);
+	}
+	DeleteQueue(Q);
+	return max;
+	}
+}
+
+

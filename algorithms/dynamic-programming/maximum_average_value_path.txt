@@ -1,0 +1,43 @@
+
+
+
+Path with maximum average value
+
+Given a square matrix of size N*N, where each cell is associated with 
+a specific cost. A path is defined as a specific sequence of cells which 
+starts from top left cell move only right or down and ends on bottom 
+right cell. We want to find a path with maximum average over all existing 
+paths. Average is computed as total cost divided by number of cells 
+visited in path.
+
+
+Examples:
+
+Input : Matrix = [1, 2, 3
+                  4, 5, 6
+                  7, 8, 9]
+Output : 5.8
+Path with maximum average is, 1 -> 4 -> 7 -> 8 -> 9
+Sum of the path is 29 and average is 29/5 = 5.8
+
+Recommended: Please try your approach on {IDE} first, before moving 
+on to the solution.
+
+One interesting observation is, the only allowed moves are down and right, 
+we need N-1 down moves and N-1 right moves to reach destination 
+(bottom rightmost). So any path from from top left corner to bottom right 
+corner requires 2N – 1 cells. In average value, denominator is fixed and we 
+need to just maximize numerator. Therefore we basically need to to find 
+maximum sum path. Calculating maximum sum of path is a classic dynamic 
+programming problem, if dp[i][j] represents maximum sum till cell (i, j) 
+from (0, 0) then at each cell (i, j), we update dp[i][j] as below,
+
+for all i, 1 <= i <= N
+   dp[i][0] = dp[i-1][0] + cost[i][0];	
+for all j, 1 <= j <= j
+   dp[0][j] = dp[0][j-1] + cost[0][j];			
+otherwise	
+   dp[i][j] = max(dp[i-1][j], dp[i][j-1]) + cost[i][j]; 
+
+Once we get maximum sum of all paths we will divide this sum by (2N – 1) 
+and we will get our maximum average.

@@ -1,0 +1,23 @@
+
+Expression tree is a binary tree in which each internal node corresponds to operator and each leaf node corresponds to operand so for example expression tree for 3 + ((5+9)*2) would be:
+
+Inorder traversal of expression tree produces infix version of given postfix expression (same with preorder traversal it gives prefix expression)
+
+Evaluating the expression represented by expression tree:
+
+Let t be the expression tree
+If  t is not null then
+      If t.value is operand then  
+                Return  t.value
+      A = solve(t.left)
+      B = solve(t.right)
+ 
+      // calculate applies operator 't.value' 
+      // on A and B, and returns value
+      Return calculate(A, B, t.value)   
+
+Construction of Expression Tree:
+Now For constructing expression tree we use a stack. We loop through input expression and do following for every character.
+1) If character is operand push that into stack
+2) If character is operator pop two values from stack make them its child and push current node again.
+At the end only element of stack will be root of expression tree.

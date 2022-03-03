@@ -1,0 +1,15 @@
+
+
+
+ramachandramohanasudha
+
+
+search  ^ram$sudha
+
+^ begin
+$ end
+. same char once
+* means any char once
+
+
+ram*$dha

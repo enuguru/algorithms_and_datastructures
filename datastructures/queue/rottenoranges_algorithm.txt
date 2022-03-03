@@ -1,0 +1,12 @@
+1) Create an empty Q.
+2) Find all rotten oranges and enqueue them to Q.  Also enqueue 
+   a delimiter to indicate beginning of next time frame. 
+3) While Q is not empty do following
+   3.a) While delimiter in Q is not reached 
+       (i) Dequeue an orange from queue, rot all adjacent oranges.
+           While rotting the adjacents, make sure that time frame 
+           is incremented only once. And time frame is not icnremented
+           if there are no adjacent oranges.
+   3.b) Dequeue the old delimiter and enqueue a new delimiter. The 
+        oranges rotten in previous time frame lie between the two
+        delimiters. 

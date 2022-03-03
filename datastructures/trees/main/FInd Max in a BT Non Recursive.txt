@@ -1,0 +1,23 @@
+
+int FindMaxInBTWORwithLOT(struct BinaryTreeNode *root)
+{
+	struct node BinaryTreeNode *temp;
+	int max = INT_MIN;
+	struct Queue *Q = CreateQueue();
+	Enqueue(Q,root);
+	while(!IsEmptyQueue(Q))
+	{
+		temp = Dequeue(Q);
+		if(max < (temp->data))
+			max = temp->data;
+		if(temp->left)
+			Enqueue(Q,temp->left);
+		if(temp->right)
+			Enqueue(Q,temp->right);
+	}
+	DeleteQueue(Q);
+	return max;
+	}
+}
+
+
