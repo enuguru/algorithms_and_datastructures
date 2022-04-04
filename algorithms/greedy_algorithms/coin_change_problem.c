@@ -10,7 +10,7 @@ void main()
 }
 
 /* this function actually hardcodes the changeamount amount and coins */
-/* array to prove the algorith */
+/* array to prove the algorithm */
 
 void coin_change()
 {

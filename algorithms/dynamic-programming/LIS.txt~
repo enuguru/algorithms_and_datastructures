@@ -1,0 +1,6 @@
+
+
+ LIS(i) = { 1 + Max ( L(j) ) }  where j < i and arr[j] < arr[i] 
+ if there is no such j then L(i) = 1
+
+    LIS(arr) =    max { i = 1 to n (LIS(i)) }

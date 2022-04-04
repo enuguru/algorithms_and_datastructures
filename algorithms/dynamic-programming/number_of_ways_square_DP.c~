@@ -1,16 +1,15 @@
 
 #include <stdio.h>
 
-int main()
+void main()
 {
     void number_of_ways();
     number_of_ways();
     printf("\n");
-    return 0;
 }
 
 
-void number_of_ways()
+int number_of_ways()
 {
         int outer,inner,i,j;
         static int A[5][6];
@@ -27,4 +26,5 @@ void number_of_ways()
 		}
                 printf("\n");
 	}
+	return 0;
 }
