@@ -1,0 +1,71 @@
+<HTML>
+<HEAD>
+<TITLE>Contact US</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<!-- ImageReady Preload Script (cdatastructure.psd) -->
+<SCRIPT TYPE="text/javascript">
+<!--
+
+function newImage(arg) {
+	if (document.images) {
+		rslt = new Image();
+		rslt.src = arg;
+		return rslt;
+	}
+}
+
+function changeImages() {
+	if (document.images && (preloadFlag == true)) {
+		for (var i=0; i<changeImages.arguments.length; i+=2) {
+			document[changeImages.arguments[i]].src = changeImages.arguments[i+1];
+		}
+	}
+}
+
+var preloadFlag = false;
+function preloadImages() {
+	if (document.images) {
+		cdatastructure_03_over = newImage("images/cdatastructure_03-over.gif");
+		cdatastructure_05_over = newImage("images/cdatastructure_05-over.gif");
+		preloadFlag = true;
+	}
+}
+
+// -->
+</SCRIPT>
+<!-- End Preload Script -->
+<!-- ImageReady Slices (cdatastructure.psd) -->
+<BGSOUND SRC="contents/music/music13.mid" LOOP=INFINITE>
+</HEAD>
+<BODY BGCOLOR=#FFFFFF LEFTMARGIN=0 TOPMARGIN=0 MARGINWIDTH=0 MARGINHEIGHT=0 ONLOAD="preloadImages();">
+<TABLE WIDTH=780 BORDER=0 CELLPADDING=0 CELLSPACING=0>
+	<TR>
+		<TD COLSPAN=3>
+			<IMG SRC="images/cdatastructure_01.gif" WIDTH=780 HEIGHT=315 ALT=""></TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=3>
+			<IMG SRC="images/cdatastructure_02.gif" WIDTH=293 HEIGHT=130 ALT=""></TD>
+		<TD>
+			<A HREF="#"
+				ONMOUSEOVER="changeImages('cdatastructure_03', 'images/cdatastructure_03-over.gif'); return true;"
+				ONMOUSEOUT="changeImages('cdatastructure_03', 'images/cdatastructure_03.gif'); return true;">
+				<IMG NAME="cdatastructure_03" SRC="images/cdatastructure_03.gif" WIDTH=312 HEIGHT=28 BORDER=0 ALT=""></A></TD>
+		<TD ROWSPAN=3>
+			<IMG SRC="images/cdatastructure_04.gif" WIDTH=175 HEIGHT=130 ALT=""></TD>
+	</TR>
+	<TR>
+		<TD>
+			<A HREF="#"
+				ONMOUSEOVER="changeImages('cdatastructure_05', 'images/cdatastructure_05-over.gif'); return true;"
+				ONMOUSEOUT="changeImages('cdatastructure_05', 'images/cdatastructure_05.gif'); return true;">
+				<IMG NAME="cdatastructure_05" SRC="images/cdatastructure_05.gif" WIDTH=312 HEIGHT=28 BORDER=0 ALT=""></A></TD>
+	</TR>
+	<TR>
+		<TD>
+			<IMG SRC="images/cdatastructure_06.gif" WIDTH=312 HEIGHT=74 ALT=""></TD>
+	</TR>
+</TABLE>
+<!-- End ImageReady Slices -->
+</BODY>
+</HTML>

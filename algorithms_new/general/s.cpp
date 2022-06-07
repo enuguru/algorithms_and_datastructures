@@ -1,5 +1,5 @@
-#include <iostream>
 
+#include <iostream>
 using namespace std;
 
 // N is the size of the 2D matrix N*N
