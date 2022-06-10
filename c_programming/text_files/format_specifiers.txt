@@ -1,0 +1,43 @@
+
+
+We should use “%zu” to print the variables of size_t length. We can use “%d” also to print size_t variables, it will not show any error. The correct way to print size_t variables is use of “%zu”.
+
+In “%zu” format, z is a length modifier and u stand for unsigned type
+
+List of format specifiers which generally used in programming
+
+For example – If we want to read and print integer using scanf() and printf() function, either %i or %d is used but there is subtle difference in both %i and %d format specifier. 
+
+%d specifies signed decimal integer while %i specifies integer
+ 
+
+Format 
+Specifier	Type
+
+%c			Character
+%d			Signed integer
+%e or %E	Scientific notation of floats
+%f			Float values
+%g or %G	Similar as %e or %E
+%hi			Signed integer (short)
+%hu			Unsigned Integer (short)
+%i			integer
+%l or 		long
+%ld or 		long
+%li			Long
+%lf			Double
+%Lf			Long double
+%lu			Unsigned int or unsigned long
+%lli or 	Long long
+%lld		Long long
+%llu		Unsigned long long
+%o			Octal representation
+%p			Pointer
+%s			String
+%u			Unsigned int
+%x or %X	Hexadecimal representation
+%n			Prints nothing
+%%			Prints % character
+ 
+
+Few examples to understand the use of format specifiers with printf() in C:

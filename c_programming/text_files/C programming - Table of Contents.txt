@@ -1,0 +1,120 @@
+C programming - Table of Contents
+
+introduction to c programming
+
+a simple hello world
+using a vim editor
+main and return type
+how to compile and execute a C program
+C standards and the latest one
+parathesis and return statement
+
+
+variable types
+
+declarations and definitions
+int, float
+double, char
+structure -
+what is typedef
+advantages of typedef
+
+
+conditional statements
+
+if statement
+else statement
+if-else
+if-else-if statements
+construct of a switch case statement
+
+
+control structures
+
+case and its form
+for loop constructs
+different varieties
+while loop construct
+different varieties of loop
+break statement
+continue statement
+real world scenarios of using each type of statements
+
+
+functions
+
+what is a function
+what is function declaration, function definition and a function call ?
+function arguments and parameters
+passing different types to a function
+how to return from a function
+how to return more than one variable from a function
+how to use functions in real C programming
+
+macros and their uses
+
+what happens in the case of macros
+types of macros
+when to use macros
+inline functions
+macros vs functions vs typedef vs inline functions
+
+
+pointers
+
+simple pointer
+integer pointer, float pointer
+char pointer and double pointer
+array pointers and its types
+what is a function pointer ?
+applications of function pointer
+declaration and definition of a function pointer
+passing a function as a variable
+calling a function using a function pointer
+structure pointer
+
+
+advanced pointers
+
+array of integer pointers
+pointer to an array
+pointer to an array of integer pointers
+array of structure pointers
+pointer to a structure array
+pointer to an array of structure pointers
+pointer to a function
+pointer to an array of function pointers
+applications of pointers
+
+
+built-in functions and other utilities
+
+setjmp and longjup
+how to use them
+built in functions in C
+string built in functions,
+char built in functions
+other built-in functions
+
+how to pass command line arguments to the program
+variable number of arguments
+vaarg, valist,
+how to pass multiple arguments
+
+problem solving using C programming
+
+writing a simple sorting algorithm
+writing a simple binary search in C
+
+creating a single and a double linked list in C
+adding, deleting and inserting elements in the list
+creating a simple queue, deque and a priority queue in C
+adding, deleting and inserting elements in the queue
+creating a simple binary search tree in C
+adding, deleting and inserting elements in the tree
+different cases of deleting a node from a tree using C
+implementing a min heap and a max heap in C
+applications of all the data structures discussed so far
+
+solving a minimum of 4 easy problems, 4 medium difficulty problems
+and 4 tough problems using C programming
