@@ -1,0 +1,16 @@
+
+
+What is MinGW ?
+
+Minimalist GNU for Windows
+A native windows port of the GNU compiler collection GCC
+
+run the one.c program to check the standard
+
+gcc --version
+
+gcc yourfile.c
+
+gcc -std=c99 -pedantic-errors yourfile.c
+or
+gcc -std=c17 -pedantic-errors yourfile.c

@@ -1,0 +1,95 @@
+
+What are the three C standards available ?
+ANSI, ISO and GNU C
+
+GCC supports the original ISO C++ standard published in 1998, and the 2011, 2014, 2017 and mostly 2020 revisions. The original ISO C++ standard was published as the ISO standard (ISO/IEC 14882:1998) and amended by a Technical Corrigenda published in 2003 (ISO/IEC 14882:2003).
+
+
+ISO - International Standards Organization 
+IEC - International Electrotechnical Commission
+
+
+The International Organization for Standardization is an international standard development organization composed of representatives from the national standards organizations of member countries. Membership requirements are given in Article 3 of the ISO Statutes.
+
+Founded on 23 February 1947, the organization develops and publishes standardization in all technical and nontechnical fields other than electrical and electronic engineering. It is headquartered in Geneva, Switzerland, and works in 167 countries as of 2022. The three official languages of the ISO are English, French, and Russian.
+
+The International Electrotechnical Commission
+The International Electrotechnical Commission (IEC) authors international standards for all electrical, electronic and related technologies. This standards collection addresses product development, performance, compatibility and related topics in order to ensure product compatibility and environmental safety.
+
+
+ANSI C was done in 1989 and handed over to ISO
+ISO C  is the current standard of the compiler
+GNU C  (the whole of linux is compiled on GNU C and not on ISO C)
+
+if you want to compile on ISO C then give the command
+gcc -std=c99 -pedantic-errors yourfile.c
+or
+gcc -std=c17 -pedantic-errors yourfile.c
+
+
+
+https://sourceforge.net/projects/mingw-w64/
+https://www.mingw-w64.org/
+
+https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win32/Personal%20Builds/mingw-builds/installer/mingw-w64-install.exe/download
+
+
+K&R C
+ANSI C 
+
+ISO C 
+
+unsigned int x;
+signed int x;
+
+0000 0111
+
+0111 1111
+0 to 255
+-127
++128
+
+
+
+signed int
+int ---  signed int
+unsigned int
+
+0000000000000111
+
+
+C Programming Wikipedia page
+https://en.wikipedia.org/wiki/C_(programming_language)
+
+
+2011 C standard
+https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1548.pdf
+
+October 18 2021
+https://www.open-std.org/jtc1/sc22/wg14/www/docs/n2731.pdf
+
+Septermber 7, 2007
+https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1256.pdf
+
+
+April 12, 2011
+https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf
+
+C - Project status and milestones
+https://www.open-std.org/jtc1/sc22/wg14/www/projects#9899
+
+
+
+C++ projects page
+https://isocpp.org/std/the-standard
+
+
+
+
+
+
+
+
+
+
+

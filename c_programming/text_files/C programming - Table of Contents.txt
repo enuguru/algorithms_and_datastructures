@@ -97,6 +97,7 @@ char built in functions
 other built-in functions
 
 how to pass command line arguments to the program
+argc, argv
 variable number of arguments
 vaarg, valist,
 how to pass multiple arguments
@@ -118,3 +119,5 @@ applications of all the data structures discussed so far
 
 solving a minimum of 4 easy problems, 4 medium difficulty problems
 and 4 tough problems using C programming
+
+vscode, vim, emacs Clion, devc++
