@@ -14,8 +14,8 @@ https://stackoverflow.com/questions/27667277/why-does-borland-compile-with-multi
 extern int i;
 
 /* OK: only visible to this file. */
-//static int si = 0;
-extern int si;
+int si = 0;
+//int si;
 
 void a() {
     i++;

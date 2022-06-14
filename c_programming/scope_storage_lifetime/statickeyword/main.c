@@ -2,7 +2,7 @@
 
 int i = 0;
 //static int si = 0;
-int si = 0;
+static int si = 0;
 
 void a();    
 
