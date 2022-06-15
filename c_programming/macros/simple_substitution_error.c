@@ -1,6 +1,7 @@
 
 #include <stdio.h>
 #define A 15
+#define pi 3.1478
 
 void main()
 {

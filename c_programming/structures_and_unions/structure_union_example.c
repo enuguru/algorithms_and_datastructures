@@ -1,4 +1,6 @@
+
 #include <stdio.h>
+
 union unionJob
 {
    //defining a union

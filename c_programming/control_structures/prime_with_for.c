@@ -4,7 +4,8 @@ int main()
 {    
 	int n,i,flag=0;    
 	printf("Enter the number to check prime:");    
-	scanf("%d",&n);    
+	scanf("%d",&n); 
+        	
 	if(n==2)
 	{
 		printf("THe given number is a prime");
