@@ -1,3 +1,4 @@
+
 typedef union
 {
     struct {
@@ -8,6 +9,7 @@ typedef union
     } bytes;
     unsigned int dword;
 } HW_Register;
+
 HW_Register reg;
 
 

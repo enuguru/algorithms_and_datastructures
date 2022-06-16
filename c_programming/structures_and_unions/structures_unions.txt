@@ -3,3 +3,4 @@ for one key difference.
 
 Structures allocate enough space to store all their members, 
 whereas unions can only hold one member value at a time.
+(highest memory occupying field)

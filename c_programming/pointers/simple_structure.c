@@ -1,26 +1,14 @@
 
 #include <stdio.h>
 
-/*
 struct student {
     char name[50];
     int roll;
     float marks;
 }s;
 
-struct student s1;
-struct student s2;
-*/
-
-typedef struct student {
-    char name[50];
-    int roll;
-    float marks;
-}STUDENT;
-
-STUDENT s;
-
-int main() {
+int main() 
+{
 
     printf("Enter information:\n");
     printf("Enter name: ");
@@ -39,3 +27,6 @@ int main() {
 
     return 0;
 }
+
+
+

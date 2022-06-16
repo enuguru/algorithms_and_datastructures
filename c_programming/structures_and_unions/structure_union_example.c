@@ -4,7 +4,7 @@
 union unionJob
 {
    //defining a union
-   char name[32];
+   char name[6];
    float salary;
    int workerNo;
 } uJob;
