@@ -1,0 +1,9 @@
+
+Bit fields can only be declared as part of a structure. The address-of
+operator (&) cannot be applied to bit-field components
+
+In C and C++, native implementation-defined bit fields can be created using
+unsigned int , signed int , or (in C99) _Bool . In this case, the programmer
+can declare a structure for a bit field which labels and determines the width
+of several subfields.
+

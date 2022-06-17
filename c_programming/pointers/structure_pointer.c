@@ -8,13 +8,14 @@ struct student {
     float marks;
 }p;
 
-struct student *s = &p;
-//struct student *s = (struct student *)malloc(sizeof(struct student));
+//struct student *s = &p;
 
 
 int main() 
 {
 
+    struct student *s = (struct student *)malloc(sizeof(struct student));
+    s = &p;
     printf("Enter information:\n");
     printf("Enter name: ");
     fgets(s->name, sizeof(s->name), stdin);

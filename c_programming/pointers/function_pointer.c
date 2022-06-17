@@ -1,21 +1,25 @@
 
-
 #include <stdio.h>
-
 
 int main()
 {
 	int x = 7;
-	void newfunc(int);
-	void (*fptr)(int) = &newfunc;
-	(*fptr)(x);
-	newfunc(7);
+	void newfunc(void (*)());
+	void functwo();
+	void (*fptr)() = &functwo;
+	newfunc(fptr);
 	return 0;
 
 }
 
 
-void newfunc(int p)
+void functwo()
 {
+	printf("Iam in function two\n");
+}
+
+void newfunc(void (*fptr)())
+{
+	(*fptr)();
 	printf("\n This is new function \n");
 }

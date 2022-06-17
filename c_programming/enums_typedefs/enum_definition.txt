@@ -1,0 +1,7 @@
+
+
+The enum in C is also known as the enumerated type. It is a user-defined data
+type that consists of integer values, and it provides meaningful names to
+these values. The use of enum in C makes the program easy to understand and
+maintain. The enum is defined by using the enum keyword.
+
