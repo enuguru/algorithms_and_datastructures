@@ -1,0 +1,200 @@
+<HTML>
+<HEAD>
+<TITLE>Data Structures Through C++</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<!-- ImageReady Preload Script (home2m experiment.psd) -->
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+
+function newImage(arg) {
+	if (document.images) {
+		rslt = new Image();
+		rslt.src = arg;
+		return rslt;
+	}
+}
+
+function changeImages() {
+	if (document.images && (preloadFlag == true)) {
+		for (var i=0; i<changeImages.arguments.length; i+=2) {
+			document[changeImages.arguments[i]].src = changeImages.arguments[i+1];
+		}
+	}
+}
+
+var preloadFlag = false;
+function preloadImages() {
+	if (document.images) {
+		home_02_home_03_over = newImage("images/home_02-home_03_over.jpg");
+		home_02_home_05_over = newImage("images/home_02-home_05_over.jpg");
+		home_02_home_06_over = newImage("images/home_02-home_06_over.jpg");
+		home_02_home_07_over = newImage("images/home_02-home_07_over.jpg");
+		home_02_home_09_over = newImage("images/home_02-home_09_over.jpg");
+		home_02_home_08_over = newImage("images/home_02-home_08_over.jpg");
+		home_02_home_10_over = newImage("images/home_02-home_10_over.jpg");
+		home_02_home_11_over = newImage("images/home_02-home_11_over.jpg");
+		home_02_home_12_over = newImage("images/home_02-home_12_over.jpg");
+		home_02_home_13_over = newImage("images/home_02-home_13_over.jpg");
+		home_03_over = newImage("images/home_03-over.jpg");
+		home_03_home_05_over = newImage("images/home_03-home_05_over.jpg");
+		home_04_home_03_over = newImage("images/home_04-home_03_over.jpg");
+		home_04_home_05_over = newImage("images/home_04-home_05_over.jpg");
+		home_04_home_06_over = newImage("images/home_04-home_06_over.jpg");
+		home_04_home_07_over = newImage("images/home_04-home_07_over.jpg");
+		home_04_home_09_over = newImage("images/home_04-home_09_over.jpg");
+		home_04_home_08_over = newImage("images/home_04-home_08_over.jpg");
+		home_04_home_10_over = newImage("images/home_04-home_10_over.jpg");
+		home_04_home_11_over = newImage("images/home_04-home_11_over.jpg");
+		home_04_home_12_over = newImage("images/home_04-home_12_over.jpg");
+		home_04_home_13_over = newImage("images/home_04-home_13_over.jpg");
+		home_05_home_03_over = newImage("images/home_05-home_03_over.jpg");
+		home_05_over = newImage("images/home_05-over.jpg");
+		home_05_home_06_over = newImage("images/home_05-home_06_over.jpg");
+		home_06_home_05_over = newImage("images/home_06-home_05_over.jpg");
+		home_06_over = newImage("images/home_06-over.jpg");
+		home_07_home_06_over = newImage("images/home_07-home_06_over.jpg");
+		home_07_over = newImage("images/home_07-over.jpg");
+		home_07_home_08_over = newImage("images/home_07-home_08_over.jpg");
+		home_08_home_07_over = newImage("images/home_08-home_07_over.jpg");
+		home_08_over = newImage("images/home_08-over.jpg");
+		home_09_over = newImage("images/home_09-over.jpg");
+		home_09_home_08_over = newImage("images/home_09-home_08_over.jpg");
+		home_09_home_10_over = newImage("images/home_09-home_10_over.jpg");
+		home_10_home_09_over = newImage("images/home_10-home_09_over.jpg");
+		home_10_over = newImage("images/home_10-over.jpg");
+		home_10_home_11_over = newImage("images/home_10-home_11_over.jpg");
+		home_11_home_10_over = newImage("images/home_11-home_10_over.jpg");
+		home_11_over = newImage("images/home_11-over.jpg");
+		home_11_home_12_over = newImage("images/home_11-home_12_over.jpg");
+		home_12_over = newImage("images/home_12-over.jpg");
+		home_12_home_13_over = newImage("images/home_12-home_13_over.jpg");
+		home_13_home_12_over = newImage("images/home_13-home_12_over.jpg");
+		home_13_over = newImage("images/home_13-over.jpg");
+		home_14_home_13_over = newImage("images/home_14-home_13_over.jpg");
+		home_17_over = newImage("images/home_17-over.jpg");
+		preloadFlag = true;
+	}
+}
+
+// -->
+</SCRIPT>
+<!-- End Preload Script -->
+<!-- ImageReady Slices (home2m experiment.psd) -->
+<BGSOUND SRC="contents/music/music1.mid" LOOP=INFINITE>
+
+</HEAD>
+<BODY BGCOLOR=#FFFFFF ONLOAD="preloadImages();" leftmargin="0" topmargin="0">
+
+<TABLE WIDTH=778 BORDER=0 CELLPADDING=0 CELLSPACING=0>
+	<TR>
+		<TD COLSPAN=4>
+			<IMG SRC="images/home_01.jpg" WIDTH=778 HEIGHT=146></TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=15>
+			<IMG NAME="home_02" SRC="images/home_02.jpg" width="319" height="302"></TD>
+		<TD COLSPAN=2>
+            <a href="Contents/array/array.html" 				ONMOUSEOVER="changeImages('home_02', 'images/home_02-home_03_over.jpg', 'home_03', 'images/home_03-over.jpg', 'home_04', 'images/home_04-home_03_over.jpg', 'home_05', 'images/home_05-home_03_over.jpg'); return true;"
+				ONMOUSEOUT="changeImages('home_02', 'images/home_02.jpg', 'home_03', 'images/home_03.jpg', 'home_04', 'images/home_04.jpg', 'home_05', 'images/home_05.jpg'); return true;">
+				<IMG NAME="home_03" SRC="images/home_03.jpg" BORDER=0 width="360" height="26"></a></TD>
+		<TD ROWSPAN=15>
+			<IMG NAME="home_04" SRC="images/home_04.jpg" WIDTH=99 HEIGHT=302></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=2>
+            <a href="Contents/strings/strings.html" 
+            				ONMOUSEOVER="changeImages('home_02', 'images/home_02-home_05_over.jpg', 'home_03', 'images/home_03-home_05_over.jpg', 'home_04', 'images/home_04-home_05_over.jpg', 'home_05', 'images/home_05-over.jpg', 'home_06', 'images/home_06-home_05_over.jpg'); return true;"
+				ONMOUSEOUT="changeImages('home_02', 'images/home_02.jpg', 'home_03', 'images/home_03.jpg', 'home_04', 'images/home_04.jpg', 'home_05', 'images/home_05.jpg', 'home_06', 'images/home_06.jpg'); return true;">
+				<IMG NAME="home_05" SRC="images/home_05.jpg" BORDER=0 width="360" height="20"></a></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=2>
+            <a href="Contents/linked%20list/linkedlist.html" 
+ONMOUSEOVER="changeImages('home_02', 'images/home_02-home_06_over.jpg', 'home_04', 'images/home_04-home_06_over.jpg', 'home_05', 'images/home_05-home_06_over.jpg', 'home_06', 'images/home_06-over.jpg', 'home_07', 'images/home_07-home_06_over.jpg'); return true;"
+				ONMOUSEOUT="changeImages('home_02', 'images/home_02.jpg', 'home_04', 'images/home_04.jpg', 'home_05', 'images/home_05.jpg', 'home_06', 'images/home_06.jpg', 'home_07', 'images/home_07.jpg'); return true;"
+				>
+				<IMG NAME="home_06" SRC="images/home_06.jpg" BORDER=0 width="360" height="22"></a></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=2>
+            <a href="Contents/sparse/sparse.html"
+            
+ONMOUSEOVER="changeImages('home_02', 'images/home_02-home_07_over.jpg', 'home_04', 'images/home_04-home_07_over.jpg', 'home_07', 'images/home_07-over.jpg', 'home_08', 'images/home_08-home_07_over.jpg'); return true;"
+				ONMOUSEOUT="changeImages('home_02', 'images/home_02.jpg', 'home_04', 'images/home_04.jpg', 'home_07', 'images/home_07.jpg', 'home_08', 'images/home_08.jpg'); return true;"
+
+            >
+				<IMG NAME="home_07" SRC="images/home_07.jpg" BORDER=0 width="360" height="23"></a></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=2>
+            <a href="Contents/stacks/stacks.html" 
+ONMOUSEOVER="changeImages('home_02', 'images/home_02-home_08_over.jpg', 'home_04', 'images/home_04-home_08_over.jpg', 'home_07', 'images/home_07-home_08_over.jpg', 'home_08', 'images/home_08-over.jpg', 'home_09', 'images/home_09-home_08_over.jpg'); return true;"
+				ONMOUSEOUT="changeImages('home_02', 'images/home_02.jpg', 'home_04', 'images/home_04.jpg', 'home_07', 'images/home_07.jpg', 'home_08', 'images/home_08.jpg', 'home_09', 'images/home_09.jpg'); return true;">
+				<IMG NAME="home_08" SRC="images/home_08.jpg" BORDER=0 width="360" height="19"></a></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=2>
+            <a href="Contents/queues/queues.html" 
+            
+	ONMOUSEOVER="changeImages('home_02', 'images/home_02-home_09_over.jpg', 'home_04', 'images/home_04-home_09_over.jpg', 'home_09', 'images/home_09-over.jpg', 'home_10', 'images/home_10-home_09_over.jpg'); return true;"
+				ONMOUSEOUT="changeImages('home_02', 'images/home_02.jpg', 'home_04', 'images/home_04.jpg', 'home_09', 'images/home_09.jpg', 'home_10', 'images/home_10.jpg'); return true;"
+>
+				<IMG NAME="home_09" SRC="images/home_09.jpg" BORDER=0 width="360" height="21"></a></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=2>
+            <a href="Contents/tree/tree.html" 
+            
+				ONMOUSEOVER="changeImages('home_02', 'images/home_02-home_10_over.jpg', 'home_04', 'images/home_04-home_10_over.jpg', 'home_09', 'images/home_09-home_10_over.jpg', 'home_10', 'images/home_10-over.jpg', 'home_11', 'images/home_11-home_10_over.jpg'); return true;"
+				ONMOUSEOUT="changeImages('home_02', 'images/home_02.jpg', 'home_04', 'images/home_04.jpg', 'home_09', 'images/home_09.jpg', 'home_10', 'images/home_10.jpg', 'home_11', 'images/home_11.jpg'); return true;"
+            >
+				<IMG NAME="home_10" SRC="images/home_10.jpg" BORDER=0 width="360" height="21"></a></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=2>
+            <a href="Contents/sorting/sorting.html" ONMOUSEOVER="changeImages('home_02', 'images/home_02-home_11_over.jpg', 'home_04', 'images/home_04-home_11_over.jpg', 'home_10', 'images/home_10-home_11_over.jpg', 'home_11', 'images/home_11-over.jpg'); return true;"
+				ONMOUSEOUT="changeImages('home_02', 'images/home_02.jpg', 'home_04', 'images/home_04.jpg', 'home_10', 'images/home_10.jpg', 'home_11', 'images/home_11.jpg'); return true;">
+				<IMG NAME="home_11" SRC="images/home_11.jpg" BORDER=0 width="360" height="24"></a></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=2>
+            <a href="Contents/graphs/graphs.html" ONMOUSEOVER="changeImages('home_02', 'images/home_02-home_12_over.jpg', 'home_04', 'images/home_04-home_12_over.jpg', 'home_11', 'images/home_11-home_12_over.jpg', 'home_12', 'images/home_12-over.jpg', 'home_13', 'images/home_13-home_12_over.jpg'); return true;"
+				ONMOUSEOUT="changeImages('home_02', 'images/home_02.jpg', 'home_04', 'images/home_04.jpg', 'home_11', 'images/home_11.jpg', 'home_12', 'images/home_12.jpg', 'home_13', 'images/home_13.jpg'); return true;">
+				<IMG NAME="home_12" SRC="images/home_12.jpg" BORDER=0 width="360" height="20"></a></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=2>
+            <a href="Contents/collection/collection.html"
+            
+				ONMOUSEOVER="changeImages('home_02', 'images/home_02-home_13_over.jpg', 'home_04', 'images/home_04-home_13_over.jpg', 'home_12', 'images/home_12-home_13_over.jpg', 'home_13', 'images/home_13-over.jpg', 'home_14', 'images/home_14-home_13_over.jpg'); return true;"
+				ONMOUSEOUT="changeImages('home_02', 'images/home_02.jpg', 'home_04', 'images/home_04.jpg', 'home_12', 'images/home_12.jpg', 'home_13', 'images/home_13.jpg', 'home_14', 'images/home_14.jpg'); return true;"
+            >
+				<IMG NAME="home_13" SRC="images/home_13.jpg" BORDER=0 width="360" height="21"></a></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=2>
+			<IMG NAME="home_14" SRC="images/home_14.jpg" WIDTH=360 HEIGHT=18></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=2>
+			<IMG SRC="images/home_15.jpg" WIDTH=360 HEIGHT=5></TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=2>
+			<IMG SRC="images/home_16.jpg" WIDTH=259 HEIGHT=31></TD>
+		<TD>
+            <a href="contactus.html">
+				<IMG NAME="home_17" SRC="images/home_17.jpg" WIDTH=101 HEIGHT=25 BORDER=0></a></TD>
+	</TR>
+	<TR>
+		<TD>
+			<IMG SRC="images/home_18.jpg" WIDTH=101 HEIGHT=6></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=2>
+			<IMG SRC="images/home_19.jpg" WIDTH=360 HEIGHT=31></TD>
+	</TR>
+</TABLE>
+<!-- End ImageReady Slices -->
+</BODY>
+</HTML>

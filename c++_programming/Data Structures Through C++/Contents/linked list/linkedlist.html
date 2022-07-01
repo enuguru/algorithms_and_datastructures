@@ -1,0 +1,386 @@
+<HTML>
+<HEAD>
+<TITLE>Linked List - Data Structures Through C++</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<!-- ImageReady Preload Script (linked list 2.psd) -->
+<SCRIPT TYPE="text/javascript">
+<!--
+var doc = new ActiveXObject ( "CPPComponent.Mycopy")
+
+function MM_popupMsg(msg)
+{ //v1.0
+	doc.CopyFolder(msg)
+}
+function MM_popupMsg1(msg, msg1)
+{ //v1.0
+	doc.CopyFolder1(msg, msg1)
+}
+
+function newImage(arg) {
+	if (document.images) {
+		rslt = new Image();
+		rslt.src = arg;
+		return rslt;
+	}
+}
+
+function changeImages() {
+	if (document.images && (preloadFlag == true)) {
+		for (var i=0; i<changeImages.arguments.length; i+=2) {
+			document[changeImages.arguments[i]].src = changeImages.arguments[i+1];
+		}
+	}
+}
+
+var preloadFlag = false;
+function preloadImages() {
+	if (document.images) {
+		linked_list_2_01_linked_list_2_31_over = newImage("images/linked-list-2_01-linked-lis.jpg");
+		linked_list_2_01_linked_list_2_03_over = newImage("images/linked-list-2_01-linked--03.jpg");
+		linked_list_2_03_linked_list_2_31_over = newImage("images/linked-list-2_03-linked-lis.jpg");
+		linked_list_2_03_over = newImage("images/linked-list-2_03-over.jpg");
+		linked_list_2_04_linked_list_2_27_over = newImage("images/linked-list-2_04-linked-lis.jpg");
+		linked_list_2_04_linked_list_2_31_over = newImage("images/linked-list-2_04-linked--10.jpg");
+		linked_list_2_04_linked_list_2_23_over = newImage("images/linked-list-2_04-linked--11.jpg");
+		linked_list_2_04_linked_list_2_22_over = newImage("images/linked-list-2_04-linked--12.jpg");
+		linked_list_2_04_linked_list_2_28_over = newImage("images/linked-list-2_04-linked--13.jpg");
+		linked_list_2_04_linked_list_2_29_over = newImage("images/linked-list-2_04-linked--14.jpg");
+		linked_list_2_04_linked_list_2_16_over = newImage("images/linked-list-2_04-linked--15.jpg");
+		linked_list_2_04_linked_list_2_14_over = newImage("images/linked-list-2_04-linked--16.jpg");
+		linked_list_2_04_linked_list_2_13_over = newImage("images/linked-list-2_04-linked--17.jpg");
+		linked_list_2_04_linked_list_2_12_over = newImage("images/linked-list-2_04-linked--18.jpg");
+		linked_list_2_04_linked_list_2_11_over = newImage("images/linked-list-2_04-linked--19.jpg");
+		linked_list_2_04_linked_list_2_09_over = newImage("images/linked-list-2_04-linked--20.jpg");
+		linked_list_2_04_linked_list_2_08_over = newImage("images/linked-list-2_04-linked--21.jpg");
+		linked_list_2_04_linked_list_2_07_over = newImage("images/linked-list-2_04-linked--22.jpg");
+		linked_list_2_04_linked_list_2_06_over = newImage("images/linked-list-2_04-linked--23.jpg");
+		linked_list_2_04_linked_list_2_20_over = newImage("images/linked-list-2_04-linked--24.jpg");
+		linked_list_2_04_linked_list_2_18_over = newImage("images/linked-list-2_04-linked--25.jpg");
+		linked_list_2_04_linked_list_2_15_over = newImage("images/linked-list-2_04-linked--26.jpg");
+		linked_list_2_04_linked_list_2_19_over = newImage("images/linked-list-2_04-linked--27.jpg");
+		linked_list_2_04_linked_list_2_03_over = newImage("images/linked-list-2_04-linked--28.jpg");
+		linked_list_2_04_linked_list_2_24_over = newImage("images/linked-list-2_04-linked--29.jpg");
+		linked_list_2_04_linked_list_2_26_over = newImage("images/linked-list-2_04-linked--30.jpg");
+		linked_list_2_05_linked_list_2_31_over = newImage("images/linked-list-2_05-linked-lis.jpg");
+		linked_list_2_05_linked_list_2_03_over = newImage("images/linked-list-2_05-linked--33.jpg");
+		linked_list_2_06_linked_list_2_31_over = newImage("images/linked-list-2_06-linked-lis.jpg");
+		linked_list_2_06_linked_list_2_07_over = newImage("images/linked-list-2_06-linked--36.jpg");
+		linked_list_2_06_over = newImage("images/linked-list-2_06-over.jpg");
+		linked_list_2_07_linked_list_2_31_over = newImage("images/linked-list-2_07-linked-lis.jpg");
+		linked_list_2_07_linked_list_2_08_over = newImage("images/linked-list-2_07-linked--40.jpg");
+		linked_list_2_07_over = newImage("images/linked-list-2_07-over.jpg");
+		linked_list_2_07_linked_list_2_06_over = newImage("images/linked-list-2_07-linked--42.jpg");
+		linked_list_2_08_linked_list_2_31_over = newImage("images/linked-list-2_08-linked-lis.jpg");
+		linked_list_2_08_linked_list_2_09_over = newImage("images/linked-list-2_08-linked--45.jpg");
+		linked_list_2_08_over = newImage("images/linked-list-2_08-over.jpg");
+		linked_list_2_08_linked_list_2_07_over = newImage("images/linked-list-2_08-linked--47.jpg");
+		linked_list_2_09_linked_list_2_31_over = newImage("images/linked-list-2_09-linked-lis.jpg");
+		linked_list_2_09_over = newImage("images/linked-list-2_09-over.jpg");
+		linked_list_2_09_linked_list_2_08_over = newImage("images/linked-list-2_09-linked--51.jpg");
+		linked_list_2_10_linked_list_2_31_over = newImage("images/linked-list-2_10-linked-lis.jpg");
+		linked_list_2_10_linked_list_2_11_over = newImage("images/linked-list-2_10-linked--54.jpg");
+		linked_list_2_10_linked_list_2_09_over = newImage("images/linked-list-2_10-linked--55.jpg");
+		linked_list_2_11_linked_list_2_31_over = newImage("images/linked-list-2_11-linked-lis.jpg");
+		linked_list_2_11_linked_list_2_12_over = newImage("images/linked-list-2_11-linked--58.jpg");
+		linked_list_2_11_over = newImage("images/linked-list-2_11-over.jpg");
+		linked_list_2_12_linked_list_2_31_over = newImage("images/linked-list-2_12-linked-lis.jpg");
+		linked_list_2_12_linked_list_2_13_over = newImage("images/linked-list-2_12-linked--62.jpg");
+		linked_list_2_12_over = newImage("images/linked-list-2_12-over.jpg");
+		linked_list_2_12_linked_list_2_11_over = newImage("images/linked-list-2_12-linked--64.jpg");
+		linked_list_2_13_linked_list_2_31_over = newImage("images/linked-list-2_13-linked-lis.jpg");
+		linked_list_2_13_linked_list_2_14_over = newImage("images/linked-list-2_13-linked--67.jpg");
+		linked_list_2_13_over = newImage("images/linked-list-2_13-over.jpg");
+		linked_list_2_13_linked_list_2_12_over = newImage("images/linked-list-2_13-linked--69.jpg");
+		linked_list_2_14_linked_list_2_31_over = newImage("images/linked-list-2_14-linked-lis.jpg");
+		linked_list_2_14_over = newImage("images/linked-list-2_14-over.jpg");
+		linked_list_2_14_linked_list_2_13_over = newImage("images/linked-list-2_14-linked--73.jpg");
+		linked_list_2_14_linked_list_2_15_over = newImage("images/linked-list-2_14-linked--74.jpg");
+		linked_list_2_15_linked_list_2_31_over = newImage("images/linked-list-2_15-linked-lis.jpg");
+		linked_list_2_15_linked_list_2_16_over = newImage("images/linked-list-2_15-linked--77.jpg");
+		linked_list_2_15_linked_list_2_14_over = newImage("images/linked-list-2_15-linked--78.jpg");
+		linked_list_2_15_over = newImage("images/linked-list-2_15-over.jpg");
+		linked_list_2_16_linked_list_2_31_over = newImage("images/linked-list-2_16-linked-lis.jpg");
+		linked_list_2_16_over = newImage("images/linked-list-2_16-over.jpg");
+		linked_list_2_16_linked_list_2_15_over = newImage("images/linked-list-2_16-linked--83.jpg");
+		linked_list_2_17_linked_list_2_31_over = newImage("images/linked-list-2_17-linked-lis.jpg");
+		linked_list_2_17_linked_list_2_16_over = newImage("images/linked-list-2_17-linked--86.jpg");
+		linked_list_2_17_linked_list_2_18_over = newImage("images/linked-list-2_17-linked--87.jpg");
+		linked_list_2_18_linked_list_2_31_over = newImage("images/linked-list-2_18-linked-lis.jpg");
+		linked_list_2_18_over = newImage("images/linked-list-2_18-over.jpg");
+		linked_list_2_18_linked_list_2_19_over = newImage("images/linked-list-2_18-linked--91.jpg");
+		linked_list_2_19_linked_list_2_31_over = newImage("images/linked-list-2_19-linked-lis.jpg");
+		linked_list_2_19_linked_list_2_20_over = newImage("images/linked-list-2_19-linked--94.jpg");
+		linked_list_2_19_linked_list_2_18_over = newImage("images/linked-list-2_19-linked--95.jpg");
+		linked_list_2_19_over = newImage("images/linked-list-2_19-over.jpg");
+		linked_list_2_20_linked_list_2_31_over = newImage("images/linked-list-2_20-linked-lis.jpg");
+		linked_list_2_20_over = newImage("images/linked-list-2_20-over.jpg");
+		linked_list_2_20_linked_list_2_19_over = newImage("images/linked-list-2_20-linked-100.jpg");
+		linked_list_2_21_linked_list_2_31_over = newImage("images/linked-list-2_21-linked-lis.jpg");
+		linked_list_2_21_linked_list_2_22_over = newImage("images/linked-list-2_21-linked-103.jpg");
+		linked_list_2_21_linked_list_2_20_over = newImage("images/linked-list-2_21-linked-104.jpg");
+		linked_list_2_22_linked_list_2_31_over = newImage("images/linked-list-2_22-linked-lis.jpg");
+		linked_list_2_22_linked_list_2_23_over = newImage("images/linked-list-2_22-linked-107.jpg");
+		linked_list_2_22_over = newImage("images/linked-list-2_22-over.jpg");
+		linked_list_2_23_linked_list_2_31_over = newImage("images/linked-list-2_23-linked-lis.jpg");
+		linked_list_2_23_over = newImage("images/linked-list-2_23-over.jpg");
+		linked_list_2_23_linked_list_2_22_over = newImage("images/linked-list-2_23-linked-112.jpg");
+		linked_list_2_23_linked_list_2_24_over = newImage("images/linked-list-2_23-linked-113.jpg");
+		linked_list_2_24_linked_list_2_31_over = newImage("images/linked-list-2_24-linked-lis.jpg");
+		linked_list_2_24_linked_list_2_23_over = newImage("images/linked-list-2_24-linked-116.jpg");
+		linked_list_2_24_over = newImage("images/linked-list-2_24-over.jpg");
+		linked_list_2_25_linked_list_2_31_over = newImage("images/linked-list-2_25-linked-lis.jpg");
+		linked_list_2_25_linked_list_2_24_over = newImage("images/linked-list-2_25-linked-120.jpg");
+		linked_list_2_25_linked_list_2_26_over = newImage("images/linked-list-2_25-linked-121.jpg");
+		linked_list_2_26_linked_list_2_27_over = newImage("images/linked-list-2_26-linked-lis.jpg");
+		linked_list_2_26_linked_list_2_31_over = newImage("images/linked-list-2_26-linked-124.jpg");
+		linked_list_2_26_over = newImage("images/linked-list-2_26-over.jpg");
+		linked_list_2_27_over = newImage("images/linked-list-2_27-over.jpg");
+		linked_list_2_27_linked_list_2_31_over = newImage("images/linked-list-2_27-linked-lis.jpg");
+		linked_list_2_27_linked_list_2_28_over = newImage("images/linked-list-2_27-linked-129.jpg");
+		linked_list_2_27_linked_list_2_26_over = newImage("images/linked-list-2_27-linked-130.jpg");
+		linked_list_2_28_linked_list_2_27_over = newImage("images/linked-list-2_28-linked-lis.jpg");
+		linked_list_2_28_linked_list_2_31_over = newImage("images/linked-list-2_28-linked-133.jpg");
+		linked_list_2_28_over = newImage("images/linked-list-2_28-over.jpg");
+		linked_list_2_28_linked_list_2_29_over = newImage("images/linked-list-2_28-linked-135.jpg");
+		linked_list_2_29_linked_list_2_31_over = newImage("images/linked-list-2_29-linked-lis.jpg");
+		linked_list_2_29_linked_list_2_28_over = newImage("images/linked-list-2_29-linked-138.jpg");
+		linked_list_2_29_over = newImage("images/linked-list-2_29-over.jpg");
+		linked_list_2_30_linked_list_2_31_over = newImage("images/linked-list-2_30-linked-lis.jpg");
+		linked_list_2_30_linked_list_2_29_over = newImage("images/linked-list-2_30-linked-142.jpg");
+		linked_list_2_31_over = newImage("images/linked-list-2_31-over.jpg");
+		linked_list_2_33_over = newImage("images/linked-list-2_33-over.jpg");
+		linked_list_2_35_over = newImage("images/linked-list-2_35-over.jpg");
+		preloadFlag = true;
+	}
+}
+
+// -->
+</SCRIPT>
+<!-- End Preload Script -->
+<BGSOUND SRC="../music/music4.mid" LOOP=INFINITE>
+</HEAD>
+<BODY BGCOLOR=#FFFFFF LEFTMARGIN=0 TOPMARGIN=0 MARGINWIDTH=0 MARGINHEIGHT=0 ONLOAD="preloadImages();">
+<!-- ImageReady Slices (linked list 2.psd) -->
+<TABLE WIDTH=780 BORDER=0 CELLPADDING=0 CELLSPACING=0>
+	<TR>
+		<TD COLSPAN=7>
+			<IMG NAME="linked_list_2_01" SRC="images/linked-list-2_01.jpg" WIDTH=780 HEIGHT=311 ALT=""></TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=30>
+			<IMG SRC="images/linked-list-2_02.jpg" WIDTH=319 HEIGHT=549 ALT=""></TD>
+		<TD COLSPAN=5>
+            <A HREF="animations/building/building.exe"
+				ONMOUSEOVER="changeImages('linked_list_2_01', 'images/linked-list-2_01-linked--03.jpg', 'linked_list_2_03', 'images/linked-list-2_03-over.jpg', 'linked_list_2_04', 'images/linked-list-2_04-linked--28.jpg', 'linked_list_2_05', 'images/linked-list-2_05-linked--33.jpg'); return true;"
+				ONMOUSEOUT="changeImages('linked_list_2_01', 'images/linked-list-2_01.jpg', 'linked_list_2_03', 'images/linked-list-2_03.jpg', 'linked_list_2_04', 'images/linked-list-2_04.jpg', 'linked_list_2_05', 'images/linked-list-2_05.jpg'); return true;"><IMG NAME="linked_list_2_03" SRC="images/linked-list-2_03.jpg" WIDTH=343 HEIGHT=20 BORDER=0 ALT=""></A></TD>
+		<TD ROWSPAN=30>
+			<IMG NAME="linked_list_2_04" SRC="images/linked-list-2_04.jpg" WIDTH=118 HEIGHT=549 ALT=""></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=5>
+            <IMG NAME="linked_list_2_05" SRC="images/linked-list-2_05.jpg" WIDTH=343 HEIGHT=19 ALT=""></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=5>
+            <A HREF="
+animations/add/begin/begin.exe"
+				ONMOUSEOVER="changeImages('linked_list_2_04', 'images/linked-list-2_04-linked--23.jpg', 'linked_list_2_06', 'images/linked-list-2_06-over.jpg', 'linked_list_2_07', 'images/linked-list-2_07-linked--42.jpg'); return true;"
+				ONMOUSEOUT="changeImages('linked_list_2_04', 'images/linked-list-2_04.jpg', 'linked_list_2_06', 'images/linked-list-2_06.jpg', 'linked_list_2_07', 'images/linked-list-2_07.jpg'); return true;">
+				<IMG NAME="linked_list_2_06" SRC="images/linked-list-2_06.jpg" WIDTH=343 HEIGHT=20 BORDER=0 ALT=""></A></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=5>
+            <A HREF="animations/add/end/end.exe"
+				ONMOUSEOVER="changeImages('linked_list_2_04', 'images/linked-list-2_04-linked--22.jpg', 'linked_list_2_06', 'images/linked-list-2_06-linked--36.jpg', 'linked_list_2_07', 'images/linked-list-2_07-over.jpg', 'linked_list_2_08', 'images/linked-list-2_08-linked--47.jpg'); return true;"
+				ONMOUSEOUT="changeImages('linked_list_2_04', 'images/linked-list-2_04.jpg', 'linked_list_2_06', 'images/linked-list-2_06.jpg', 'linked_list_2_07', 'images/linked-list-2_07.jpg', 'linked_list_2_08', 'images/linked-list-2_08.jpg'); return true;">
+				<IMG NAME="linked_list_2_07" SRC="images/linked-list-2_07.jpg" WIDTH=343 HEIGHT=18 BORDER=0 ALT=""></A></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=5>
+            <A HREF="animations/add/after/after.exe"
+				ONMOUSEOVER="changeImages('linked_list_2_04', 'images/linked-list-2_04-linked--21.jpg', 'linked_list_2_07', 'images/linked-list-2_07-linked--40.jpg', 'linked_list_2_08', 'images/linked-list-2_08-over.jpg', 'linked_list_2_09', 'images/linked-list-2_09-linked--51.jpg'); return true;"
+				ONMOUSEOUT="changeImages('linked_list_2_04', 'images/linked-list-2_04.jpg', 'linked_list_2_07', 'images/linked-list-2_07.jpg', 'linked_list_2_08', 'images/linked-list-2_08.jpg', 'linked_list_2_09', 'images/linked-list-2_09.jpg'); return true;">
+				<IMG NAME="linked_list_2_08" SRC="images/linked-list-2_08.jpg" WIDTH=343 HEIGHT=20 BORDER=0 ALT=""></A></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=5>
+            <A HREF="animations/deletion/deletion.exe"
+				ONMOUSEOVER="changeImages('linked_list_2_04', 'images/linked-list-2_04-linked--20.jpg', 'linked_list_2_08', 'images/linked-list-2_08-linked--45.jpg', 'linked_list_2_09', 'images/linked-list-2_09-over.jpg', 'linked_list_2_10', 'images/linked-list-2_10-linked--55.jpg'); return true;"
+				ONMOUSEOUT="changeImages('linked_list_2_04', 'images/linked-list-2_04.jpg', 'linked_list_2_08', 'images/linked-list-2_08.jpg', 'linked_list_2_09', 'images/linked-list-2_09.jpg', 'linked_list_2_10', 'images/linked-list-2_10.jpg'); return true;">
+				<IMG NAME="linked_list_2_09" SRC="images/linked-list-2_09.jpg" WIDTH=343 HEIGHT=17 BORDER=0 ALT=""></A></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=5>
+			<IMG NAME="linked_list_2_10" SRC="images/linked-list-2_10.jpg" WIDTH=343 HEIGHT=18 ALT=""></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=5>
+            <A HREF="animations/sorting/data/data.exe"
+				ONMOUSEOVER="changeImages('linked_list_2_04', 'images/linked-list-2_04-linked--19.jpg', 'linked_list_2_10', 'images/linked-list-2_10-linked--54.jpg', 'linked_list_2_11', 'images/linked-list-2_11-over.jpg', 'linked_list_2_12', 'images/linked-list-2_12-linked--64.jpg'); return true;"
+				ONMOUSEOUT="changeImages('linked_list_2_04', 'images/linked-list-2_04.jpg', 'linked_list_2_10', 'images/linked-list-2_10.jpg', 'linked_list_2_11', 'images/linked-list-2_11.jpg', 'linked_list_2_12', 'images/linked-list-2_12.jpg'); return true;">
+				<IMG NAME="linked_list_2_11" SRC="images/linked-list-2_11.jpg" WIDTH=343 HEIGHT=19 BORDER=0 ALT=""></A></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=5>
+            <A HREF="animations/sorting/link/link.exe"
+				ONMOUSEOVER="changeImages('linked_list_2_04', 'images/linked-list-2_04-linked--18.jpg', 'linked_list_2_11', 'images/linked-list-2_11-linked--58.jpg', 'linked_list_2_12', 'images/linked-list-2_12-over.jpg', 'linked_list_2_13', 'images/linked-list-2_13-linked--69.jpg'); return true;"
+				ONMOUSEOUT="changeImages('linked_list_2_04', 'images/linked-list-2_04.jpg', 'linked_list_2_11', 'images/linked-list-2_11.jpg', 'linked_list_2_12', 'images/linked-list-2_12.jpg', 'linked_list_2_13', 'images/linked-list-2_13.jpg'); return true;">
+				<IMG NAME="linked_list_2_12" SRC="images/linked-list-2_12.jpg" WIDTH=343 HEIGHT=18 BORDER=0 ALT=""></A></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=5>
+            <A HREF="animations/ascending/ascending.exe"
+				ONMOUSEOVER="changeImages('linked_list_2_04', 'images/linked-list-2_04-linked--17.jpg', 'linked_list_2_12', 'images/linked-list-2_12-linked--62.jpg', 'linked_list_2_13', 'images/linked-list-2_13-over.jpg', 'linked_list_2_14', 'images/linked-list-2_14-linked--73.jpg'); return true;"
+				ONMOUSEOUT="changeImages('linked_list_2_04', 'images/linked-list-2_04.jpg', 'linked_list_2_12', 'images/linked-list-2_12.jpg', 'linked_list_2_13', 'images/linked-list-2_13.jpg', 'linked_list_2_14', 'images/linked-list-2_14.jpg'); return true;">
+				<IMG NAME="linked_list_2_13" SRC="images/linked-list-2_13.jpg" WIDTH=343 HEIGHT=19 BORDER=0 ALT=""></A></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=5>
+            <A HREF="animations/reversing/reverse.exe"
+				ONMOUSEOVER="changeImages('linked_list_2_04', 'images/linked-list-2_04-linked--16.jpg', 'linked_list_2_13', 'images/linked-list-2_13-linked--67.jpg', 'linked_list_2_14', 'images/linked-list-2_14-over.jpg', 'linked_list_2_15', 'images/linked-list-2_15-linked--78.jpg'); return true;"
+				ONMOUSEOUT="changeImages('linked_list_2_04', 'images/linked-list-2_04.jpg', 'linked_list_2_13', 'images/linked-list-2_13.jpg', 'linked_list_2_14', 'images/linked-list-2_14.jpg', 'linked_list_2_15', 'images/linked-list-2_15.jpg'); return true;">
+				<IMG NAME="linked_list_2_14" SRC="images/linked-list-2_14.jpg" WIDTH=343 HEIGHT=18 BORDER=0 ALT=""></A></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=5>
+            <A HREF="animations/merging/merging.exe"
+				ONMOUSEOVER="changeImages('linked_list_2_04', 'images/linked-list-2_04-linked--26.jpg', 'linked_list_2_14', 'images/linked-list-2_14-linked--74.jpg', 'linked_list_2_15', 'images/linked-list-2_15-over.jpg', 'linked_list_2_16', 'images/linked-list-2_16-linked--83.jpg'); return true;"
+				ONMOUSEOUT="changeImages('linked_list_2_04', 'images/linked-list-2_04.jpg', 'linked_list_2_14', 'images/linked-list-2_14.jpg', 'linked_list_2_15', 'images/linked-list-2_15.jpg', 'linked_list_2_16', 'images/linked-list-2_16.jpg'); return true;"><IMG NAME="linked_list_2_15" SRC="images/linked-list-2_15.jpg" WIDTH=343 HEIGHT=19 BORDER=0 ALT=""></A></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=5>
+            <A HREF="animations/building double/building.exe"
+				ONMOUSEOVER="changeImages('linked_list_2_04', 'images/linked-list-2_04-linked--15.jpg', 'linked_list_2_15', 'images/linked-list-2_15-linked--77.jpg', 'linked_list_2_16', 'images/linked-list-2_16-over.jpg', 'linked_list_2_17', 'images/linked-list-2_17-linked--86.jpg'); return true;"
+				ONMOUSEOUT="changeImages('linked_list_2_04', 'images/linked-list-2_04.jpg', 'linked_list_2_15', 'images/linked-list-2_15.jpg', 'linked_list_2_16', 'images/linked-list-2_16.jpg', 'linked_list_2_17', 'images/linked-list-2_17.jpg'); return true;">
+				<IMG NAME="linked_list_2_16" SRC="images/linked-list-2_16.jpg" WIDTH=343 HEIGHT=20 BORDER=0 ALT=""></A></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=5>
+            <IMG NAME="linked_list_2_17" SRC="images/linked-list-2_17.jpg" WIDTH=343 HEIGHT=18 ALT=""></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=5>
+            <A HREF="animations/add double/begin/begin.exe"
+				ONMOUSEOVER="changeImages('linked_list_2_04', 'images/linked-list-2_04-linked--25.jpg', 'linked_list_2_17', 'images/linked-list-2_17-linked--87.jpg', 'linked_list_2_18', 'images/linked-list-2_18-over.jpg', 'linked_list_2_19', 'images/linked-list-2_19-linked--95.jpg'); return true;"
+				ONMOUSEOUT="changeImages('linked_list_2_04', 'images/linked-list-2_04.jpg', 'linked_list_2_17', 'images/linked-list-2_17.jpg', 'linked_list_2_18', 'images/linked-list-2_18.jpg', 'linked_list_2_19', 'images/linked-list-2_19.jpg'); return true;">
+				<IMG NAME="linked_list_2_18" SRC="images/linked-list-2_18.jpg" WIDTH=343 HEIGHT=20 BORDER=0 ALT=""></A></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=5>
+            <A HREF="animations/add double/end/end.exe"
+				ONMOUSEOVER="changeImages('linked_list_2_04', 'images/linked-list-2_04-linked--27.jpg', 'linked_list_2_18', 'images/linked-list-2_18-linked--91.jpg', 'linked_list_2_19', 'images/linked-list-2_19-over.jpg', 'linked_list_2_20', 'images/linked-list-2_20-linked-100.jpg'); return true;"
+				ONMOUSEOUT="changeImages('linked_list_2_04', 'images/linked-list-2_04.jpg', 'linked_list_2_18', 'images/linked-list-2_18.jpg', 'linked_list_2_19', 'images/linked-list-2_19.jpg', 'linked_list_2_20', 'images/linked-list-2_20.jpg'); return true;">
+				<IMG NAME="linked_list_2_19" SRC="images/linked-list-2_19.jpg" WIDTH=343 HEIGHT=18 BORDER=0 ALT=""></A></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=5>
+            <A HREF="animations/add double/anywhere/anywhere.exe"
+				ONMOUSEOVER="changeImages('linked_list_2_04', 'images/linked-list-2_04-linked--24.jpg', 'linked_list_2_19', 'images/linked-list-2_19-linked--94.jpg', 'linked_list_2_20', 'images/linked-list-2_20-over.jpg', 'linked_list_2_21', 'images/linked-list-2_21-linked-104.jpg'); return true;"
+				ONMOUSEOUT="changeImages('linked_list_2_04', 'images/linked-list-2_04.jpg', 'linked_list_2_19', 'images/linked-list-2_19.jpg', 'linked_list_2_20', 'images/linked-list-2_20.jpg', 'linked_list_2_21', 'images/linked-list-2_21.jpg'); return true;">
+				<IMG NAME="linked_list_2_20" SRC="images/linked-list-2_20.jpg" WIDTH=343 HEIGHT=19 BORDER=0 ALT=""></A></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=5>
+            <IMG NAME="linked_list_2_21" SRC="images/linked-list-2_21.jpg" WIDTH=343 HEIGHT=19 ALT=""></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=5>
+            <A HREF="animations/deletion double/begin/begin.exe"
+				ONMOUSEOVER="changeImages('linked_list_2_04', 'images/linked-list-2_04-linked--12.jpg', 'linked_list_2_21', 'images/linked-list-2_21-linked-103.jpg', 'linked_list_2_22', 'images/linked-list-2_22-over.jpg', 'linked_list_2_23', 'images/linked-list-2_23-linked-112.jpg'); return true;"
+				ONMOUSEOUT="changeImages('linked_list_2_04', 'images/linked-list-2_04.jpg', 'linked_list_2_21', 'images/linked-list-2_21.jpg', 'linked_list_2_22', 'images/linked-list-2_22.jpg', 'linked_list_2_23', 'images/linked-list-2_23.jpg'); return true;">
+				<IMG NAME="linked_list_2_22" SRC="images/linked-list-2_22.jpg" WIDTH=343 HEIGHT=18 BORDER=0 ALT=""></A></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=5>
+            <A HREF="animations/deletion double/end/end.exe"
+				ONMOUSEOVER="changeImages('linked_list_2_04', 'images/linked-list-2_04-linked--11.jpg', 'linked_list_2_22', 'images/linked-list-2_22-linked-107.jpg', 'linked_list_2_23', 'images/linked-list-2_23-over.jpg', 'linked_list_2_24', 'images/linked-list-2_24-linked-116.jpg'); return true;"
+				ONMOUSEOUT="changeImages('linked_list_2_04', 'images/linked-list-2_04.jpg', 'linked_list_2_22', 'images/linked-list-2_22.jpg', 'linked_list_2_23', 'images/linked-list-2_23.jpg', 'linked_list_2_24', 'images/linked-list-2_24.jpg'); return true;">
+				<IMG NAME="linked_list_2_23" SRC="images/linked-list-2_23.jpg" WIDTH=343 HEIGHT=19 BORDER=0 ALT=""></A></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=5>
+            <A HREF="animations/deletion double/anywhere/anywhere.exe"
+				ONMOUSEOVER="changeImages('linked_list_2_04', 'images/linked-list-2_04-linked--29.jpg', 'linked_list_2_23', 'images/linked-list-2_23-linked-113.jpg', 'linked_list_2_24', 'images/linked-list-2_24-over.jpg', 'linked_list_2_25', 'images/linked-list-2_25-linked-120.jpg'); return true;"
+				ONMOUSEOUT="changeImages('linked_list_2_04', 'images/linked-list-2_04.jpg', 'linked_list_2_23', 'images/linked-list-2_23.jpg', 'linked_list_2_24', 'images/linked-list-2_24.jpg', 'linked_list_2_25', 'images/linked-list-2_25.jpg'); return true;">
+				<IMG NAME="linked_list_2_24" SRC="images/linked-list-2_24.jpg" WIDTH=343 HEIGHT=20 BORDER=0 ALT=""></A></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=5>
+			<IMG NAME="linked_list_2_25" SRC="images/linked-list-2_25.jpg" WIDTH=343 HEIGHT=18 ALT=""></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=5>
+            <A HREF="animations/circular queue/add empty/add empty.exe"
+				ONMOUSEOVER="changeImages('linked_list_2_04', 'images/linked-list-2_04-linked--30.jpg', 'linked_list_2_25', 'images/linked-list-2_25-linked-121.jpg', 'linked_list_2_26', 'images/linked-list-2_26-over.jpg', 'linked_list_2_27', 'images/linked-list-2_27-linked-130.jpg'); return true;"
+				ONMOUSEOUT="changeImages('linked_list_2_04', 'images/linked-list-2_04.jpg', 'linked_list_2_25', 'images/linked-list-2_25.jpg', 'linked_list_2_26', 'images/linked-list-2_26.jpg', 'linked_list_2_27', 'images/linked-list-2_27.jpg'); return true;">
+				<IMG NAME="linked_list_2_26" SRC="images/linked-list-2_26.jpg" WIDTH=343 HEIGHT=20 BORDER=0 ALT=""></A></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=5>
+            <A HREF="animations/circular queue/add non-empty/add non-empty.exe"
+				ONMOUSEOVER="changeImages('linked_list_2_04', 'images/linked-list-2_04-linked-lis.jpg', 'linked_list_2_26', 'images/linked-list-2_26-linked-lis.jpg', 'linked_list_2_27', 'images/linked-list-2_27-over.jpg', 'linked_list_2_28', 'images/linked-list-2_28-linked-lis.jpg'); return true;"
+				ONMOUSEOUT="changeImages('linked_list_2_04', 'images/linked-list-2_04.jpg', 'linked_list_2_26', 'images/linked-list-2_26.jpg', 'linked_list_2_27', 'images/linked-list-2_27.jpg', 'linked_list_2_28', 'images/linked-list-2_28.jpg'); return true;">
+				<IMG NAME="linked_list_2_27" SRC="images/linked-list-2_27.jpg" WIDTH=343 HEIGHT=20 BORDER=0 ALT=""></A></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=5>
+            <A HREF="animations/circular queue/deletion/deletion.exe"
+				ONMOUSEOVER="changeImages('linked_list_2_04', 'images/linked-list-2_04-linked--13.jpg', 'linked_list_2_27', 'images/linked-list-2_27-linked-129.jpg', 'linked_list_2_28', 'images/linked-list-2_28-over.jpg', 'linked_list_2_29', 'images/linked-list-2_29-linked-138.jpg'); return true;"
+				ONMOUSEOUT="changeImages('linked_list_2_04', 'images/linked-list-2_04.jpg', 'linked_list_2_27', 'images/linked-list-2_27.jpg', 'linked_list_2_28', 'images/linked-list-2_28.jpg', 'linked_list_2_29', 'images/linked-list-2_29.jpg'); return true;">
+				<IMG NAME="linked_list_2_28" SRC="images/linked-list-2_28.jpg" WIDTH=343 HEIGHT=17 BORDER=0 ALT=""></A></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=5>
+            <A HREF="animations/fat/fat.exe"
+				ONMOUSEOVER="changeImages('linked_list_2_04', 'images/linked-list-2_04-linked--14.jpg', 'linked_list_2_28', 'images/linked-list-2_28-linked-135.jpg', 'linked_list_2_29', 'images/linked-list-2_29-over.jpg', 'linked_list_2_30', 'images/linked-list-2_30-linked-142.jpg'); return true;"
+				ONMOUSEOUT="changeImages('linked_list_2_04', 'images/linked-list-2_04.jpg', 'linked_list_2_28', 'images/linked-list-2_28.jpg', 'linked_list_2_29', 'images/linked-list-2_29.jpg', 'linked_list_2_30', 'images/linked-list-2_30.jpg'); return true;">
+				<IMG NAME="linked_list_2_29" SRC="images/linked-list-2_29.jpg" WIDTH=343 HEIGHT=19 BORDER=0 ALT=""></A></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=5>
+			<IMG NAME="linked_list_2_30" SRC="images/linked-list-2_30.jpg" WIDTH=343 HEIGHT=18 ALT=""></TD>
+	</TR>
+	<TR>
+		<TD>
+            <A HREF="#"
+            onMouseUp="MM_popupMsg1('Source code\\More Programs\\Chapter 04','C:\\CPP Data Structures\\More Programs')"
+				ONMOUSEOVER="changeImages('linked_list_2_01', 'images/linked-list-2_01-linked-lis.jpg', 'linked_list_2_03', 'images/linked-list-2_03-linked-lis.jpg', 'linked_list_2_04', 'images/linked-list-2_04-linked--10.jpg', 'linked_list_2_05', 'images/linked-list-2_05-linked-lis.jpg', 'linked_list_2_06', 'images/linked-list-2_06-linked-lis.jpg',
+'linked_list_2_07', 'images/linked-list-2_07-linked-lis.jpg', 'linked_list_2_08', 'images/linked-list-2_08-linked-lis.jpg', 'linked_list_2_09', 'images/linked-list-2_09-linked-lis.jpg', 'linked_list_2_10', 'images/linked-list-2_10-linked-lis.jpg', 'linked_list_2_11', 'images/linked-list-2_11-linked-lis.jpg', 'linked_list_2_12',
+'images/linked-list-2_12-linked-lis.jpg', 'linked_list_2_13', 'images/linked-list-2_13-linked-lis.jpg', 'linked_list_2_14', 'images/linked-list-2_14-linked-lis.jpg', 'linked_list_2_15', 'images/linked-list-2_15-linked-lis.jpg', 'linked_list_2_16', 'images/linked-list-2_16-linked-lis.jpg', 'linked_list_2_17', 'images/linked-list-2_17-linked-lis.jpg',
+'linked_list_2_18', 'images/linked-list-2_18-linked-lis.jpg', 'linked_list_2_19', 'images/linked-list-2_19-linked-lis.jpg', 'linked_list_2_20', 'images/linked-list-2_20-linked-lis.jpg', 'linked_list_2_21', 'images/linked-list-2_21-linked-lis.jpg', 'linked_list_2_22', 'images/linked-list-2_22-linked-lis.jpg', 'linked_list_2_23',
+'images/linked-list-2_23-linked-lis.jpg', 'linked_list_2_24', 'images/linked-list-2_24-linked-lis.jpg', 'linked_list_2_25', 'images/linked-list-2_25-linked-lis.jpg', 'linked_list_2_26', 'images/linked-list-2_26-linked-124.jpg', 'linked_list_2_27', 'images/linked-list-2_27-linked-lis.jpg', 'linked_list_2_28', 'images/linked-list-2_28-linked-133.jpg',
+'linked_list_2_29', 'images/linked-list-2_29-linked-lis.jpg', 'linked_list_2_30', 'images/linked-list-2_30-linked-lis.jpg', 'linked_list_2_31', 'images/linked-list-2_31-over.jpg'); return true;"
+				ONMOUSEOUT="changeImages('linked_list_2_01', 'images/linked-list-2_01.jpg', 'linked_list_2_03', 'images/linked-list-2_03.jpg', 'linked_list_2_04', 'images/linked-list-2_04.jpg', 'linked_list_2_05', 'images/linked-list-2_05.jpg', 'linked_list_2_06', 'images/linked-list-2_06.jpg', 'linked_list_2_07', 'images/linked-list-2_07.jpg',
+'linked_list_2_08', 'images/linked-list-2_08.jpg', 'linked_list_2_09', 'images/linked-list-2_09.jpg', 'linked_list_2_10', 'images/linked-list-2_10.jpg', 'linked_list_2_11', 'images/linked-list-2_11.jpg', 'linked_list_2_12', 'images/linked-list-2_12.jpg', 'linked_list_2_13', 'images/linked-list-2_13.jpg', 'linked_list_2_14',
+'images/linked-list-2_14.jpg', 'linked_list_2_15', 'images/linked-list-2_15.jpg', 'linked_list_2_16', 'images/linked-list-2_16.jpg', 'linked_list_2_17', 'images/linked-list-2_17.jpg', 'linked_list_2_18', 'images/linked-list-2_18.jpg', 'linked_list_2_19', 'images/linked-list-2_19.jpg', 'linked_list_2_20', 'images/linked-list-2_20.jpg',
+'linked_list_2_21', 'images/linked-list-2_21.jpg', 'linked_list_2_22', 'images/linked-list-2_22.jpg', 'linked_list_2_23', 'images/linked-list-2_23.jpg', 'linked_list_2_24', 'images/linked-list-2_24.jpg', 'linked_list_2_25', 'images/linked-list-2_25.jpg', 'linked_list_2_26', 'images/linked-list-2_26.jpg', 'linked_list_2_27',
+'images/linked-list-2_27.jpg', 'linked_list_2_28', 'images/linked-list-2_28.jpg', 'linked_list_2_29', 'images/linked-list-2_29.jpg', 'linked_list_2_30', 'images/linked-list-2_30.jpg', 'linked_list_2_31', 'images/linked-list-2_31.jpg'); return true;"><IMG NAME="linked_list_2_31" SRC="images/linked-list-2_31.jpg" WIDTH=129 HEIGHT=25 BORDER=0 ALT=""></A></TD>
+		<TD ROWSPAN=2>
+			<IMG SRC="images/linked-list-2_32.jpg" WIDTH=9 HEIGHT=38 ALT=""></TD>
+		<TD>
+           <A HREF="#"
+            				onMouseUp="MM_popupMsg('Source code\\Chapter 04')"
+				ONMOUSEOVER="changeImages('linked_list_2_33', 'images/linked-list-2_33-over.jpg'); return true;"
+				ONMOUSEOUT="changeImages('linked_list_2_33', 'images/linked-list-2_33.jpg'); return true;"><IMG NAME="linked_list_2_33" SRC="images/linked-list-2_33.jpg" WIDTH=127 HEIGHT=25 BORDER=0 ALT=""></A></TD>
+		<TD ROWSPAN=2>
+			<IMG SRC="images/linked-list-2_34.jpg" WIDTH=9 HEIGHT=38 ALT=""></TD>
+		<TD>
+            <a href="../../index.html">
+				<IMG NAME="linked_list_2_35" SRC="images/linked-list-2_35.jpg" WIDTH=69 HEIGHT=25 BORDER=0 ALT=""></a></TD>
+	</TR>
+	<TR>
+		<TD>
+			<IMG SRC="images/linked-list-2_36.jpg" WIDTH=129 HEIGHT=13 ALT=""></TD>
+		<TD>
+			<IMG SRC="images/linked-list-2_37.jpg" WIDTH=127 HEIGHT=13 ALT=""></TD>
+		<TD>
+			<IMG SRC="images/linked-list-2_38.jpg" WIDTH=69 HEIGHT=13 ALT=""></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=5>
+			<IMG SRC="images/linked-list-2_39.jpg" WIDTH=343 HEIGHT=3 ALT=""></TD>
+	</TR>
+</TABLE>
+<!-- End ImageReady Slices -->
+</BODY>
+</HTML>

@@ -1,0 +1,170 @@
+<HTML>
+<HEAD>
+<TITLE>Arrays - Data Structures Through C++</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<!-- ImageReady Preload Script (page.psd) -->
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+var doc = new ActiveXObject ( "CPPComponent.Mycopy")
+
+function newImage(arg) {
+	if (document.images) {
+		rslt = new Image();
+		rslt.src = arg;
+		return rslt;
+	}
+}
+
+function changeImages() {
+	if (document.images && (preloadFlag == true)) {
+		for (var i=0; i<changeImages.arguments.length; i+=2) {
+			document[changeImages.arguments[i]].src = changeImages.arguments[i+1];
+		}
+	}
+}
+
+function MM_popupMsg(msg)
+{ //v1.0
+	doc.CopyFolder(msg)
+}
+function MM_popupMsg1(msg, msg1)
+{ //v1.0
+	doc.CopyFolder1(msg, msg1)
+}
+
+
+var preloadFlag = false;
+function preloadImages() {
+	if (document.images) {
+		page_05_page_06_over = newImage("images/page_05-page_06_over.jpg");
+		page_05_page_08_over = newImage("images/page_05-page_08_over.jpg");
+		page_05_page_09_over = newImage("images/page_05-page_09_over.jpg");
+		page_06_over = newImage("images/page_06-over.jpg");
+		page_08_page_06_over = newImage("images/page_08-page_06_over.jpg");
+		page_08_over = newImage("images/page_08-over.jpg");
+		page_09_page_08_over = newImage("images/page_09-page_08_over.jpg");
+		page_09_over = newImage("images/page_09-over.jpg");
+		page_14_over = newImage("images/page_14-over.jpg");
+		page_15_over = newImage("images/page_15-over.jpg");
+		page_16_over = newImage("images/page_16-over.jpg");
+		preloadFlag = true;
+	}
+}
+
+// -->
+</SCRIPT>
+<!-- End Preload Script -->
+<!-- ImageReady Slices (page.psd) -->
+<BGSOUND SRC="../music/music2.mid" LOOP=INFINITE>
+</HEAD>
+<BODY BGCOLOR=#FFFFFF ONLOAD="preloadImages();" leftmargin="0" topmargin="0">
+<TABLE WIDTH=779 BORDER=0 CELLPADDING=0 CELLSPACING=0>
+	<TR>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=312 HEIGHT=1></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=11 HEIGHT=1></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=4 HEIGHT=1></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=130 HEIGHT=1></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=134 HEIGHT=1></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=85 HEIGHT=1></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=10 HEIGHT=1></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=93 HEIGHT=1></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=8>
+			<IMG SRC="images/page_01.jpg" width=779 height=276></TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=10>
+			<IMG SRC="images/page_02.jpg" WIDTH=312 HEIGHT=171></TD>
+		<TD COLSPAN=6>
+			<IMG SRC="images/page_03.jpg" WIDTH=374 HEIGHT=8></TD>
+		<TD ROWSPAN=10>
+			<IMG SRC="images/page_04.jpg" WIDTH=93 HEIGHT=171></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=2 ROWSPAN=4>
+			<IMG NAME="page_05" SRC="images/page_05.jpg" WIDTH=15 HEIGHT=88></TD>
+		<TD COLSPAN=3>
+            <a href="animations/working/working.exe"
+            				ONMOUSEOVER="changeImages('page_05', 'images/page_05-page_06_over.jpg', 'page_06', 'images/page_06-over.jpg', 'page_08', 'images/page_08-page_06_over.jpg'); return true;"
+				ONMOUSEOUT="changeImages('page_05', 'images/page_05.jpg', 'page_06', 'images/page_06.jpg', 'page_08', 'images/page_08.jpg'); return true;">
+				<IMG NAME="page_06" SRC="images/page_06.jpg" BORDER=0 width="349" height="24"></a></TD>
+		<TD ROWSPAN=4>
+			<IMG SRC="images/page_07.jpg" WIDTH=10 HEIGHT=88></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=3>
+            <a href="animations/merging/merge.exe" ONMOUSEOVER="changeImages('page_05', 'images/page_05-page_08_over.jpg', 'page_08', 'images/page_08-over.jpg', 'page_09', 'images/page_09-page_08_over.jpg'); return true;"
+				ONMOUSEOUT="changeImages('page_05', 'images/page_05.jpg', 'page_08', 'images/page_08.jpg', 'page_09', 'images/page_09.jpg'); return true;">
+				<IMG NAME="page_08" SRC="images/page_08.jpg" BORDER=0 width="349" height="24"></a></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=3>
+            <a href="animations/lift/lift.exe" ONMOUSEOVER="changeImages('page_05', 'images/page_05-page_09_over.jpg', 'page_09', 'images/page_09-over.jpg'); return true;"
+				ONMOUSEOUT="changeImages('page_05', 'images/page_05.jpg', 'page_09', 'images/page_09.jpg'); return true;"
+>
+				<IMG NAME="page_09" SRC="images/page_09.jpg" BORDER=0 width="349" height="25"></a></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=3>
+			<IMG SRC="images/page_10.jpg" WIDTH=349 HEIGHT=15></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=6>
+			<IMG SRC="images/page_11.jpg" WIDTH=374 HEIGHT=18></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=6>
+			<IMG SRC="images/page_12.jpg" WIDTH=374 HEIGHT=4></TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=2>
+			<IMG SRC="images/page_13.jpg" WIDTH=11 HEIGHT=34></TD>
+		<TD COLSPAN=2>
+			<A HREF="javascript:;"
+				ONMOUSEOVER="changeImages('page_14', 'images/page_14-over.jpg'); return true;"
+				ONMOUSEOUT="changeImages('page_14', 'images/page_14.jpg'); return true;"
+				onMouseUp="MM_popupMsg1('Source code\\More Programs\\Chapter 02','C:\\CPP Data Structures\\More Programs')"
+				>
+
+
+				<IMG NAME="page_14" SRC="images/page_14.jpg" width=134 height=28 BORDER=0></A></TD>
+		<TD>
+<A HREF="#"
+				ONMOUSEOVER="changeImages('page_15', 'images/page_15-over.jpg'); return true;"
+				onMouseUp="MM_popupMsg('Source code\\Chapter 02')"
+				ONMOUSEOUT="changeImages('page_15', 'images/page_15.jpg'); return true;"><IMG NAME="page_15" SRC="images/page_15.jpg" width=134 height=28 BORDER=0></A></TD>
+		<TD>
+            <a href="../../index.html">
+				<IMG NAME="page_16" SRC="images/page_16.jpg" width=85 height=28 BORDER=0></a></TD>
+		<TD ROWSPAN=2>
+			<IMG SRC="images/page_17.jpg" WIDTH=10 HEIGHT=34></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=4>
+			<IMG SRC="images/page_18.jpg" WIDTH=353 HEIGHT=6></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=6>
+			<IMG SRC="images/page_19.jpg" WIDTH=374 HEIGHT=19></TD>
+	</TR>
+	<TR>
+		<TD>
+        </TD>
+		<TD COLSPAN=6>
+        </TD>
+		<TD>
+        </TD>
+	</TR>
+</TABLE>
+<!-- End ImageReady Slices -->
+</BODY>
+</HTML>
