@@ -6,6 +6,7 @@
  
 /* lis() returns the length of the longest increasing subsequence in 
     arr[] of size n */
+
 int lis( int arr[], int n )
 {
    int *lis, i, j, max = 0;

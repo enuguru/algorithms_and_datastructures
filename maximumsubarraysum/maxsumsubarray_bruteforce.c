@@ -19,7 +19,7 @@ int maxSubArraySum(int a[], int size)
              max_so_far = sum;
        }
     } 
-	return max_so_far; 
+    return max_so_far; 
 }
 
 
