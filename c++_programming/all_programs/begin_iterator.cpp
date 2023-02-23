@@ -10,5 +10,4 @@ int main()
 	for(auto it=a.rbegin();it!=a.rend();it++)
 			cout<<*it<<" "<<endl;
 	return 0;
-	
 }

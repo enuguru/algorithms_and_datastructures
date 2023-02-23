@@ -8,10 +8,12 @@ void main()
 	int array_count, array_high, array_low, loop_count;
 	int colourarray[11] = {0,2,2,0,1,1,2,2,0,0,1};
         array_count = 11; array_high = 2; array_low = 0;
+	printf("\n");
 	for(loop_count = 0; loop_count < array_count; loop_count++)
 	{
-		printf("%d\n",colourarray[loop_count]);
+		printf("%d ",colourarray[loop_count]);
 	}
+	printf("\n\n");
         dutchFlagSort(colourarray,array_count,array_high,array_low);
 }
 
@@ -51,6 +53,7 @@ void dutchFlagSort(int inArray[], int arraySize, int high, int low)
 	  }
 	for(loop_count = 0; loop_count < arraySize; loop_count++)
 	{
-		printf("%d\n",inArray[loop_count]);
+		printf("%d ",inArray[loop_count]);
 	}
+	printf("\n");
 }

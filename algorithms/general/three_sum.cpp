@@ -62,8 +62,3 @@ int main()
 	cout << newvector;
 	return 0;
 }
-
-
-
-
-

@@ -42,6 +42,7 @@ int main()
 	insertNext(mylist,15);
 	insertNext(mylist,20);
 	insertNext(mylist,25);
+        traverseAndPrintList(mylist);
 	return 0;
 }
 
@@ -142,7 +143,7 @@ int removeNode(LinkedList list)
  
 // Move through the passed list by means of the list pointer
 
-void traverseList(LinkedList list)
+void traverseAndPrintList(LinkedList list)
 {
     list->pointer = &list->head; 
     int i = 1; // This integer value is just for output clarity

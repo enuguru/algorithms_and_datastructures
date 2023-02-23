@@ -29,20 +29,3 @@ bool is_linked_list_a_palindrome(shared_ptr<node_t><T>>L)
 
     return true;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

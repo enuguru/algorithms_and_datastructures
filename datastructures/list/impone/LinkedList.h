@@ -11,7 +11,7 @@ void insertNext(LinkedList, int);
 
 int removeNode(LinkedList); 
 
-void traverseList(LinkedList); 
+void traverseAndPrintList(LinkedList); 
 
 void first(LinkedList); 
 

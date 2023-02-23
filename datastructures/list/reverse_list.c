@@ -11,6 +11,7 @@ struct node
 	struct node *link ;
 } ;
 
+
 void addatbeg ( struct node **, int ) ;
 void reverse ( struct node ** ) ;
 void display ( struct node * ) ;
@@ -36,6 +37,7 @@ void main( )
 	printf ( "\nNo. of elements in the linked list = %d", count ( p ) ) ;
 }
 
+
 /* adds a new node at the beginning of the linked list */
 void addatbeg ( struct node **q, int num )
 {
@@ -47,6 +49,7 @@ void addatbeg ( struct node **q, int num )
 	temp -> link = *q ;
 	*q = temp ;
 }
+
 
 void reverse ( struct node **x )
 {
@@ -79,6 +82,7 @@ void display ( struct node *q )
 		q = q -> link ;
 	}
 }
+
 
 /* counts the number of nodes present in the linked list */
 int count ( struct node * q )
