@@ -57,7 +57,7 @@ int maxSubArraySum(int arr[], int l, int h)
 			maxCrossingSum(arr, l, m, h));
 }
 
-/*Driver program to test maxSubArraySum*/
+
 int main()
 {
 	int arr[] = { -2, -3, 4, -1, -2, 1, 5, -3 };
