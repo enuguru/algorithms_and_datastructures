@@ -17,6 +17,3 @@ typedef struct btree
 }NODE;
 
 NODE *START = NULL;
-
-
-
