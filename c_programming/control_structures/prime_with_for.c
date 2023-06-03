@@ -29,3 +29,5 @@ int main()
 		printf("Number is prime");     
 	return 0;  
 }
+
+

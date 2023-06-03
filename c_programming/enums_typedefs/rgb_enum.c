@@ -1,3 +1,4 @@
+
 #include<stdio.h>
 
 enum color {
@@ -19,3 +20,5 @@ int main()
 	printf("Value of blue = %d \n", current_color);	
 	return 0;
 }
+
+
