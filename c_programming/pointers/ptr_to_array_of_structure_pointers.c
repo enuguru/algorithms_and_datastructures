@@ -8,6 +8,7 @@ struct student {
 }p[3];
 
 struct student *s[3] = {&p[0], &p[1], &p[2]};
+struct student *(*sptr)[3] = &s;
 
 int main() 
 {
