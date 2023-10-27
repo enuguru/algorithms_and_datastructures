@@ -7,6 +7,7 @@ int main()
 	void functwo();
 	void functhree();
 	void (*fptr[3])() = { funcone, functwo, functhree };
+	funcone();
 	(*fptr[0]) ();
 	(*fptr[1]) ();
 	(*fptr[2]) ();

@@ -2,7 +2,6 @@
 #include <iostream>
 using namespace std;
 
-
 int getmaxsubarraysum(int a[],int n)
 {
 	int maxsubarraysum = 0;

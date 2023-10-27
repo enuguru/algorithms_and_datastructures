@@ -8,7 +8,7 @@ struct student {
     float marks;
 }p;
 
-//struct student *s = &p;
+struct student *s = &p;
 
 
 int main() 
