@@ -14,8 +14,8 @@ double firstQuartile(const std::vector<double>& sortedData) {
 }
 
 int main() {
-    std::vector<double> data = {12.5, 13.2, 14.1, 14.2, 15.3, 15.7, 16.0, 16.2, 16.9, 17.5,
-                                18.0, 18.2, 18.5, 18.8, 19.0, 19.5, 19.7, 19.8, 19.9, 21.5};
+    std::vector<double> data = {1.5, 13.2, 14.1, 14.2, 15.3, 15.7, 16.0, 16.2, 16.9, 17.5,
+                                18.0, 18.2, 18.5, 18.8, 19.0, 19.5, 19.7, 19.8, 19.9, 211.5};
 
     // Sort the data
     std::sort(data.begin(), data.end());

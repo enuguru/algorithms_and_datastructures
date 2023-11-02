@@ -14,7 +14,7 @@ void main()
 
 void coin_change()
 {
-    int coincount = 0; int coinindex =0; int sel =0; int changeamount = 110;
+    int coincount = 0; int coinindex =0; int sel =0; int changeamount = 117;
     int coinselect[20] = { 0 }; int coins[4] = { 25, 10, 5, 1};
     int loopcount,changeamountorig; changeamountorig = changeamount; 
    
