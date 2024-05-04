@@ -8,7 +8,8 @@ typedef struct Person {
   float salary;
 } person;
 
-int main() {
+int main() 
+{
 
   // create  Person variable
   person p1;

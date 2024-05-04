@@ -20,7 +20,8 @@ typedef struct student {
 
 STUDENT s;
 
-int main() {
+int main() 
+{
 
     printf("Enter information:\n");
     printf("Enter name: ");

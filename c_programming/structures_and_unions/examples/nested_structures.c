@@ -10,7 +10,8 @@ struct number {
   int integer;
 } num1;
 
-int main() {
+int main() 
+{
 
   // initialize complex variables
   num1.comp.imag = 11;

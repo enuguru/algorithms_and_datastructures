@@ -104,17 +104,3 @@ int searchlinklist(int x)
    }
    return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,7 +8,10 @@ struct Person {
   float salary;
 } person1;
 
-int main() {
+// struct Person person2;
+
+int main() 
+{
 
   // assign value to name of person1
   strcpy(person1.name, "George Orwell");
