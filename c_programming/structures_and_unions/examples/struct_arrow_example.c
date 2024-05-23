@@ -17,6 +17,7 @@ int main()
 
 struct Person *person1;
 person1 = (struct Person *)malloc(sizeof(struct Person));
+
   // assign value to name of person1
   strcpy(person1->name, "George Orwell");
 
@@ -28,6 +29,6 @@ person1 = (struct Person *)malloc(sizeof(struct Person));
   printf("Name: %s\n", person1->name);
   printf("Citizenship No.: %d\n", person1->citNo);
   printf("Salary: %.2f", person1->salary);
-
+  free(person1);
   return 0;
 }

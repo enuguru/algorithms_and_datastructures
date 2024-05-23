@@ -1,6 +1,7 @@
 
-#include <stdio.h>
+// function declaration, function definition and function call
 
+#include <stdio.h>
 
 int main()
 {
